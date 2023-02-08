@@ -1,0 +1,1092 @@
+16:20:08 INFO  : Platform repository initialization has completed.
+16:20:08 INFO  : Launching XSCT server: xsct -n  -interactive /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/temp_xsdb_launch_script.tcl
+16:20:08 INFO  : Registering command handlers for Vitis TCF services
+16:20:11 INFO  : XSCT server has started successfully.
+16:20:11 INFO  : plnx-install-location is set to ''
+16:20:12 INFO  : Successfully done setting XSCT server connection channel  
+16:20:12 INFO  : Successfully done query RDI_DATADIR 
+16:20:12 INFO  : Successfully done setting workspace for the tool. 
+16:28:22 INFO  : Result from executing command 'getProjects': system_wrapper
+16:28:22 INFO  : Result from executing command 'getPlatforms': 
+16:28:22 WARN  : An unexpected exception occurred in the module 'platform project logging'
+16:28:22 INFO  : Platform 'system_wrapper' is added to custom repositories.
+16:28:29 INFO  : Platform 'system_wrapper' is added to custom repositories.
+16:50:34 INFO  : Launching XSCT server: xsct -n  -interactive /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/temp_xsdb_launch_script.tcl
+16:50:34 INFO  : Platform repository initialization has completed.
+16:50:35 INFO  : Registering command handlers for Vitis TCF services
+16:50:37 INFO  : XSCT server has started successfully.
+16:50:37 INFO  : Successfully done setting XSCT server connection channel  
+16:50:37 INFO  : plnx-install-location is set to ''
+16:50:37 INFO  : Successfully done query RDI_DATADIR 
+16:50:37 INFO  : Successfully done setting workspace for the tool. 
+16:51:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:51:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+16:51:40 ERROR : fpga configuration failed. DONE PIN is not HIGH
+16:52:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+16:52:35 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+16:53:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:53:46 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+16:53:46 INFO  : 'jtag frequency' command is executed.
+16:53:46 INFO  : Context for 'APU' is selected.
+16:53:46 INFO  : System reset is completed.
+16:53:49 INFO  : 'after 3000' command is executed.
+16:53:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+16:53:50 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+16:53:50 INFO  : Context for 'APU' is selected.
+16:53:50 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+16:53:50 INFO  : 'configparams force-mem-access 1' command is executed.
+16:53:50 INFO  : Context for 'APU' is selected.
+16:53:50 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+16:53:50 INFO  : 'ps7_init' command is executed.
+16:53:50 INFO  : 'ps7_post_config' command is executed.
+16:53:50 INFO  : 'configparams force-mem-access 0' command is executed.
+16:53:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:53:50 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default.tcl'
+16:54:11 INFO  : Disconnected from the channel tcfchan#1.
+16:54:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:54:24 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+16:54:24 INFO  : 'jtag frequency' command is executed.
+16:54:24 INFO  : Context for 'APU' is selected.
+16:54:24 INFO  : System reset is completed.
+16:54:27 INFO  : 'after 3000' command is executed.
+16:54:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+16:54:28 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+16:54:28 INFO  : Context for 'APU' is selected.
+16:54:30 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+16:54:30 INFO  : 'configparams force-mem-access 1' command is executed.
+16:54:30 INFO  : Context for 'APU' is selected.
+16:54:30 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+16:54:30 INFO  : 'ps7_init' command is executed.
+16:54:30 INFO  : 'ps7_post_config' command is executed.
+16:54:30 INFO  : 'configparams force-mem-access 0' command is executed.
+16:54:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:54:30 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default.tcl'
+16:54:40 INFO  : Disconnected from the channel tcfchan#2.
+16:54:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:54:43 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+16:54:43 INFO  : 'jtag frequency' command is executed.
+16:54:43 INFO  : Context for 'APU' is selected.
+16:54:43 INFO  : System reset is completed.
+16:54:46 INFO  : 'after 3000' command is executed.
+16:54:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+16:54:47 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+16:54:47 INFO  : Context for 'APU' is selected.
+16:54:49 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+16:54:49 INFO  : 'configparams force-mem-access 1' command is executed.
+16:54:49 INFO  : Context for 'APU' is selected.
+16:54:49 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+16:54:49 INFO  : 'ps7_init' command is executed.
+16:54:49 INFO  : 'ps7_post_config' command is executed.
+16:54:49 INFO  : 'configparams force-mem-access 0' command is executed.
+16:54:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:54:49 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/systemdebugger_lab1_system_standalone.tcl'
+16:55:31 INFO  : Build configuration of 'lab1_system' is updated to 'Release'
+16:55:31 INFO  : Build configuration of system project is automatically updated to 'Release'.
+16:55:32 INFO  : Build configuration of 'lab1_system' is updated to 'Debug'
+16:55:32 INFO  : Build configuration of system project is automatically updated to 'Debug'.
+16:56:04 INFO  : Disconnected from the channel tcfchan#3.
+16:56:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:56:06 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+16:56:06 INFO  : 'jtag frequency' command is executed.
+16:56:06 INFO  : Context for 'APU' is selected.
+16:56:06 INFO  : System reset is completed.
+16:56:09 INFO  : 'after 3000' command is executed.
+16:56:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+16:56:11 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+16:56:11 INFO  : Context for 'APU' is selected.
+16:56:12 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+16:56:12 INFO  : 'configparams force-mem-access 1' command is executed.
+16:56:12 INFO  : Context for 'APU' is selected.
+16:56:12 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+16:56:13 INFO  : 'ps7_init' command is executed.
+16:56:13 INFO  : 'ps7_post_config' command is executed.
+16:56:13 INFO  : 'configparams force-mem-access 0' command is executed.
+16:56:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:56:13 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/systemdebugger_lab1_system_standalone.tcl'
+16:56:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:56:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+16:56:32 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+16:58:32 INFO  : Disconnected from the channel tcfchan#4.
+16:58:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:58:37 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+16:58:37 INFO  : 'jtag frequency' command is executed.
+16:58:37 INFO  : Context for 'APU' is selected.
+16:58:38 INFO  : System reset is completed.
+16:58:41 INFO  : 'after 3000' command is executed.
+16:58:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+16:58:42 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+16:58:42 INFO  : Context for 'APU' is selected.
+16:58:42 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+16:58:42 INFO  : 'configparams force-mem-access 1' command is executed.
+16:58:42 INFO  : Context for 'APU' is selected.
+16:58:42 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+16:58:42 INFO  : 'ps7_init' command is executed.
+16:58:42 INFO  : 'ps7_post_config' command is executed.
+16:58:42 INFO  : 'configparams force-mem-access 0' command is executed.
+16:58:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:58:42 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default.tcl'
+17:00:17 INFO  : Disconnected from the channel tcfchan#5.
+17:00:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:00:19 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+17:00:19 INFO  : 'jtag frequency' command is executed.
+17:00:19 INFO  : Context for 'APU' is selected.
+17:00:20 INFO  : System reset is completed.
+17:00:23 INFO  : 'after 3000' command is executed.
+17:00:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+17:00:24 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+17:00:24 INFO  : Context for 'APU' is selected.
+17:00:24 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:00:24 INFO  : 'configparams force-mem-access 1' command is executed.
+17:00:24 INFO  : Context for 'APU' is selected.
+17:00:24 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+17:00:24 INFO  : 'ps7_init' command is executed.
+17:00:24 INFO  : 'ps7_post_config' command is executed.
+17:00:24 INFO  : 'configparams force-mem-access 0' command is executed.
+17:00:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:00:24 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+17:01:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:01:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+17:01:13 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+17:01:28 INFO  : Result from executing command 'getProjects': system_wrapper
+17:01:28 INFO  : Result from executing command 'getPlatforms': system_wrapper|/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/system_wrapper.xpfm
+17:01:31 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+17:01:36 INFO  : Disconnected from the channel tcfchan#6.
+17:01:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:01:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:01:46 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:02:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:02:07 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+17:02:07 INFO  : 'jtag frequency' command is executed.
+17:02:07 INFO  : Context for 'APU' is selected.
+17:02:08 ERROR : Cannot reset APU. Timeout waiting DAP to reconnect after reset
+17:02:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+17:02:08 ERROR : Cannot reset APU. Timeout waiting DAP to reconnect after reset
+17:02:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:02:19 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+17:02:19 INFO  : 'jtag frequency' command is executed.
+17:02:19 INFO  : Context for 'APU' is selected.
+17:02:19 INFO  : System reset is completed.
+17:02:22 INFO  : 'after 3000' command is executed.
+17:02:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+17:02:23 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+17:02:23 INFO  : Context for 'APU' is selected.
+17:02:23 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:02:23 INFO  : 'configparams force-mem-access 1' command is executed.
+17:02:23 INFO  : Context for 'APU' is selected.
+17:02:23 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+17:02:23 INFO  : 'ps7_init' command is executed.
+17:02:23 INFO  : 'ps7_post_config' command is executed.
+17:02:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:02:24 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:02:24 INFO  : 'configparams force-mem-access 0' command is executed.
+17:02:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:02:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:02:24 INFO  : 'con' command is executed.
+17:02:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:02:24 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+17:03:01 INFO  : Disconnected from the channel tcfchan#8.
+17:03:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:03:03 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+17:03:03 INFO  : 'jtag frequency' command is executed.
+17:03:03 INFO  : Context for 'APU' is selected.
+17:03:03 INFO  : System reset is completed.
+17:03:06 INFO  : 'after 3000' command is executed.
+17:03:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+17:03:07 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+17:03:07 INFO  : Context for 'APU' is selected.
+17:03:07 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:03:07 INFO  : 'configparams force-mem-access 1' command is executed.
+17:03:07 INFO  : Context for 'APU' is selected.
+17:03:07 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+17:03:07 INFO  : 'ps7_init' command is executed.
+17:03:07 INFO  : 'ps7_post_config' command is executed.
+17:03:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:03:07 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:03:07 INFO  : 'configparams force-mem-access 0' command is executed.
+17:03:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:03:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:03:07 INFO  : 'con' command is executed.
+17:03:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:03:07 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+17:03:24 INFO  : Disconnected from the channel tcfchan#9.
+17:03:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:03:25 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+17:03:25 INFO  : 'jtag frequency' command is executed.
+17:03:25 INFO  : Context for 'APU' is selected.
+17:03:25 INFO  : System reset is completed.
+17:03:28 INFO  : 'after 3000' command is executed.
+17:03:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+17:03:29 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+17:03:29 INFO  : Context for 'APU' is selected.
+17:03:29 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:03:29 INFO  : 'configparams force-mem-access 1' command is executed.
+17:03:29 INFO  : Context for 'APU' is selected.
+17:03:29 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+17:03:30 INFO  : 'ps7_init' command is executed.
+17:03:30 INFO  : 'ps7_post_config' command is executed.
+17:03:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:03:30 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:03:30 INFO  : 'configparams force-mem-access 0' command is executed.
+17:03:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:03:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:03:30 INFO  : 'con' command is executed.
+17:03:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:03:30 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+17:04:48 INFO  : Launching XSCT server: xsct -n  -interactive /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/temp_xsdb_launch_script.tcl
+17:04:48 INFO  : Platform repository initialization has completed.
+17:04:50 INFO  : Registering command handlers for Vitis TCF services
+17:04:51 INFO  : XSCT server has started successfully.
+17:04:51 INFO  : Successfully done setting XSCT server connection channel  
+17:04:51 INFO  : plnx-install-location is set to ''
+17:04:51 INFO  : Successfully done setting workspace for the tool. 
+17:04:51 INFO  : Successfully done query RDI_DATADIR 
+17:05:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:05:23 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+17:05:23 INFO  : 'jtag frequency' command is executed.
+17:05:23 INFO  : Context for 'APU' is selected.
+17:05:23 INFO  : System reset is completed.
+17:05:26 INFO  : 'after 3000' command is executed.
+17:05:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+17:05:27 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+17:05:27 INFO  : Context for 'APU' is selected.
+17:05:27 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:05:27 INFO  : 'configparams force-mem-access 1' command is executed.
+17:05:27 INFO  : Context for 'APU' is selected.
+17:05:27 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+17:05:27 INFO  : 'ps7_init' command is executed.
+17:05:27 INFO  : 'ps7_post_config' command is executed.
+17:05:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:05:27 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:05:28 INFO  : 'configparams force-mem-access 0' command is executed.
+17:05:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:05:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:05:28 INFO  : 'con' command is executed.
+17:05:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:05:28 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+18:06:49 INFO  : Result from executing command 'getProjects': system_wrapper
+18:06:49 INFO  : Result from executing command 'getPlatforms': system_wrapper|/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/system_wrapper.xpfm
+18:06:52 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+18:06:59 INFO  : Disconnected from the channel tcfchan#1.
+18:07:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:07:00 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+18:07:00 INFO  : 'jtag frequency' command is executed.
+18:07:00 INFO  : Context for 'APU' is selected.
+18:07:00 INFO  : System reset is completed.
+18:07:03 INFO  : 'after 3000' command is executed.
+18:07:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+18:07:04 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+18:07:04 INFO  : Context for 'APU' is selected.
+18:07:04 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:07:04 INFO  : 'configparams force-mem-access 1' command is executed.
+18:07:04 INFO  : Context for 'APU' is selected.
+18:07:04 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+18:07:05 INFO  : 'ps7_init' command is executed.
+18:07:05 INFO  : 'ps7_post_config' command is executed.
+18:07:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:07:05 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:07:05 INFO  : 'configparams force-mem-access 0' command is executed.
+18:07:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:07:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:07:05 INFO  : 'con' command is executed.
+18:07:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:07:05 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+18:17:26 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+18:17:33 INFO  : Disconnected from the channel tcfchan#3.
+18:17:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:36 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+18:17:36 INFO  : 'jtag frequency' command is executed.
+18:17:36 INFO  : Context for 'APU' is selected.
+18:17:36 INFO  : System reset is completed.
+18:17:39 INFO  : 'after 3000' command is executed.
+18:17:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+18:17:41 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+18:17:41 INFO  : Context for 'APU' is selected.
+18:17:41 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:17:41 INFO  : 'configparams force-mem-access 1' command is executed.
+18:17:41 INFO  : Context for 'APU' is selected.
+18:17:41 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+18:17:41 INFO  : 'ps7_init' command is executed.
+18:17:41 INFO  : 'ps7_post_config' command is executed.
+18:17:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:41 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:17:41 INFO  : 'configparams force-mem-access 0' command is executed.
+18:17:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:17:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:41 INFO  : 'con' command is executed.
+18:17:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:17:41 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+18:42:51 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+18:43:32 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+18:43:40 INFO  : Disconnected from the channel tcfchan#4.
+18:43:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:43:41 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+18:43:41 INFO  : 'jtag frequency' command is executed.
+18:43:41 INFO  : Context for 'APU' is selected.
+18:43:41 INFO  : System reset is completed.
+18:43:44 INFO  : 'after 3000' command is executed.
+18:43:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+18:43:45 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+18:43:45 INFO  : Context for 'APU' is selected.
+18:43:45 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:43:45 INFO  : 'configparams force-mem-access 1' command is executed.
+18:43:45 INFO  : Context for 'APU' is selected.
+18:43:45 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+18:43:46 INFO  : 'ps7_init' command is executed.
+18:43:46 INFO  : 'ps7_post_config' command is executed.
+18:43:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:43:46 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:43:46 INFO  : 'configparams force-mem-access 0' command is executed.
+18:43:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:43:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:43:46 INFO  : 'con' command is executed.
+18:43:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:43:46 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+18:44:55 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+18:45:04 INFO  : Disconnected from the channel tcfchan#5.
+18:45:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:45:05 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+18:45:05 INFO  : 'jtag frequency' command is executed.
+18:45:05 INFO  : Context for 'APU' is selected.
+18:45:05 INFO  : System reset is completed.
+18:45:08 INFO  : 'after 3000' command is executed.
+18:45:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+18:45:10 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+18:45:10 INFO  : Context for 'APU' is selected.
+18:45:10 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:45:10 INFO  : 'configparams force-mem-access 1' command is executed.
+18:45:10 INFO  : Context for 'APU' is selected.
+18:45:10 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+18:45:10 INFO  : 'ps7_init' command is executed.
+18:45:10 INFO  : 'ps7_post_config' command is executed.
+18:45:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:45:10 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:45:10 INFO  : 'configparams force-mem-access 0' command is executed.
+18:45:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:45:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:45:10 INFO  : 'con' command is executed.
+18:45:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:45:10 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+18:45:59 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+18:46:08 INFO  : Disconnected from the channel tcfchan#6.
+18:46:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:46:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:46:18 ERROR : Could not find Jtag device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+18:47:25 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+18:47:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:47:32 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+18:47:32 INFO  : 'jtag frequency' command is executed.
+18:47:32 INFO  : Context for 'APU' is selected.
+18:47:32 INFO  : System reset is completed.
+18:47:35 INFO  : 'after 3000' command is executed.
+18:47:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+18:47:36 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+18:47:36 INFO  : Context for 'APU' is selected.
+18:47:36 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:47:36 INFO  : 'configparams force-mem-access 1' command is executed.
+18:47:36 INFO  : Context for 'APU' is selected.
+18:47:36 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+18:47:37 INFO  : 'ps7_init' command is executed.
+18:47:37 INFO  : 'ps7_post_config' command is executed.
+18:47:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:37 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:47:37 INFO  : 'configparams force-mem-access 0' command is executed.
+18:47:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:47:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:37 INFO  : 'con' command is executed.
+18:47:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:47:37 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+19:02:41 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:05:41 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:07:26 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:07:35 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:07:52 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:08:57 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:10:33 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:14:00 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:14:12 INFO  : Disconnected from the channel tcfchan#7.
+19:14:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:14:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+19:14:22 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+19:15:03 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:15:35 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:15:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:15:40 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+19:15:40 INFO  : 'jtag frequency' command is executed.
+19:15:40 INFO  : Context for 'APU' is selected.
+19:15:41 INFO  : System reset is completed.
+19:15:44 INFO  : 'after 3000' command is executed.
+19:15:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+19:15:45 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+19:15:45 INFO  : Context for 'APU' is selected.
+19:15:45 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+19:15:45 INFO  : 'configparams force-mem-access 1' command is executed.
+19:15:45 INFO  : Context for 'APU' is selected.
+19:15:45 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+19:15:45 INFO  : 'ps7_init' command is executed.
+19:15:45 INFO  : 'ps7_post_config' command is executed.
+19:15:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:15:45 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:15:45 INFO  : 'configparams force-mem-access 0' command is executed.
+19:15:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:15:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:15:45 INFO  : 'con' command is executed.
+19:15:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:15:45 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+19:16:28 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:17:16 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:17:40 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:17:53 INFO  : Disconnected from the channel tcfchan#8.
+19:17:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:17:54 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+19:17:54 INFO  : 'jtag frequency' command is executed.
+19:17:54 INFO  : Context for 'APU' is selected.
+19:17:54 INFO  : System reset is completed.
+19:17:57 INFO  : 'after 3000' command is executed.
+19:17:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+19:17:58 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+19:17:58 INFO  : Context for 'APU' is selected.
+19:17:58 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+19:17:58 INFO  : 'configparams force-mem-access 1' command is executed.
+19:17:58 INFO  : Context for 'APU' is selected.
+19:17:58 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+19:17:58 INFO  : 'ps7_init' command is executed.
+19:17:58 INFO  : 'ps7_post_config' command is executed.
+19:17:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:17:59 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:17:59 INFO  : 'configparams force-mem-access 0' command is executed.
+19:17:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:17:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:17:59 INFO  : 'con' command is executed.
+19:17:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:17:59 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+19:18:14 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:18:25 INFO  : Disconnected from the channel tcfchan#9.
+19:18:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:18:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+19:18:35 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+19:22:19 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:22:41 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:22:49 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:23:00 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:27:23 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:27:43 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:28:09 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:28:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:28:18 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+19:28:18 INFO  : 'jtag frequency' command is executed.
+19:28:18 INFO  : Context for 'APU' is selected.
+19:28:18 INFO  : System reset is completed.
+19:28:21 INFO  : 'after 3000' command is executed.
+19:28:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+19:28:22 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+19:28:22 INFO  : Context for 'APU' is selected.
+19:28:22 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+19:28:22 INFO  : 'configparams force-mem-access 1' command is executed.
+19:28:22 INFO  : Context for 'APU' is selected.
+19:28:22 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+19:28:22 INFO  : 'ps7_init' command is executed.
+19:28:22 INFO  : 'ps7_post_config' command is executed.
+19:28:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:28:22 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:28:22 INFO  : 'configparams force-mem-access 0' command is executed.
+19:28:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:28:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:28:23 INFO  : 'con' command is executed.
+19:28:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:28:23 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+19:29:33 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:31:08 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:31:18 INFO  : Disconnected from the channel tcfchan#10.
+19:31:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:31:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+19:31:28 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+19:33:28 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:33:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:33:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+19:33:37 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+19:33:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:33:42 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+19:33:42 INFO  : 'jtag frequency' command is executed.
+19:33:42 INFO  : Context for 'APU' is selected.
+19:33:42 INFO  : System reset is completed.
+19:33:45 INFO  : 'after 3000' command is executed.
+19:33:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+19:33:46 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+19:33:46 INFO  : Context for 'APU' is selected.
+19:33:46 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+19:33:46 INFO  : 'configparams force-mem-access 1' command is executed.
+19:33:46 INFO  : Context for 'APU' is selected.
+19:33:46 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+19:33:46 INFO  : 'ps7_init' command is executed.
+19:33:46 INFO  : 'ps7_post_config' command is executed.
+19:33:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:33:47 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:33:47 INFO  : 'configparams force-mem-access 0' command is executed.
+19:33:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:33:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:33:47 INFO  : 'con' command is executed.
+19:33:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:33:47 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+19:34:05 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:34:17 INFO  : Disconnected from the channel tcfchan#11.
+19:34:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:34:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+19:34:27 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+19:34:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:34:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+19:34:34 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+19:34:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:34:37 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+19:34:37 INFO  : 'jtag frequency' command is executed.
+19:34:37 INFO  : Context for 'APU' is selected.
+19:34:37 INFO  : System reset is completed.
+19:34:40 INFO  : 'after 3000' command is executed.
+19:34:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+19:34:42 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+19:34:42 INFO  : Context for 'APU' is selected.
+19:34:42 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+19:34:42 INFO  : 'configparams force-mem-access 1' command is executed.
+19:34:42 INFO  : Context for 'APU' is selected.
+19:34:42 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+19:34:42 INFO  : 'ps7_init' command is executed.
+19:34:42 INFO  : 'ps7_post_config' command is executed.
+19:34:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:34:42 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:34:42 INFO  : 'configparams force-mem-access 0' command is executed.
+19:34:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:34:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:34:42 INFO  : 'con' command is executed.
+19:34:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:34:42 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+19:35:18 INFO  : Checking for BSP changes to sync application flags for project 'lab1'...
+19:35:28 INFO  : Disconnected from the channel tcfchan#12.
+19:35:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:35:29 INFO  : Jtag cable 'Digilent Zybo 210279786616A' is selected.
+19:35:29 INFO  : 'jtag frequency' command is executed.
+19:35:29 INFO  : Context for 'APU' is selected.
+19:35:29 INFO  : System reset is completed.
+19:35:32 INFO  : 'after 3000' command is executed.
+19:35:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}' command is executed.
+19:35:33 INFO  : Device configured successfully with "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit"
+19:35:33 INFO  : Context for 'APU' is selected.
+19:35:33 INFO  : Hardware design and registers information is loaded from '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+19:35:33 INFO  : 'configparams force-mem-access 1' command is executed.
+19:35:33 INFO  : Context for 'APU' is selected.
+19:35:33 INFO  : Sourcing of '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl' is done.
+19:35:33 INFO  : 'ps7_init' command is executed.
+19:35:33 INFO  : 'ps7_post_config' command is executed.
+19:35:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:35:34 INFO  : The application '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:35:34 INFO  : 'configparams force-mem-access 0' command is executed.
+19:35:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786616A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279786616A-13722093-0"}
+fpga -file /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/Debug/lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:35:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:35:34 INFO  : 'con' command is executed.
+19:35:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:35:34 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
