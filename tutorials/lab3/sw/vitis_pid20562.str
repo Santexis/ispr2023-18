@@ -1,0 +1,262 @@
+/*
+
+Xilinx Vitis v2021.2.0 (64-bit) [Major: 2021, Minor: 2]
+SW Build 3363750 on 2021-10-16-13:10:08
+
+Process ID (PID): 20562
+License: Customer
+
+Current time: 	Wed Feb 22 17:06:15 CET 2023
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Ubuntu
+OS Version: 5.15.0-48-generic
+OS Architecture: amd64
+Available processors (cores): 6
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 1
+Available disk space: 66 GB
+
+Java version: 	11.0.11 64-bit
+Java home: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9
+Java executable location: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /opt/Xilinx/Vitis/2021.2/tps/lnx64/javafx-sdk-11.0.2/lib:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib/:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib//server:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/python-3.8.3/lib:/opt/Xilinx/Vitis/2021.2/aietools/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /opt/Xilinx/Vitis/2021.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /opt/Xilinx/Vitis
+
+User name: 	ispr
+User home directory: /home/ispr
+User working directory: /home/ispr/Documentos/ispr/tutorials/lab3/sw
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vitis
+HDI_APPROOT: /opt/Xilinx/Vitis/2021.2
+RDI_DATADIR: /opt/Xilinx/Vitis/2021.2/data
+RDI_BINDIR: /opt/Xilinx/Vitis/2021.2/bin
+
+Vitis preferences directory: /home/ispr/.Xilinx/Vitis/2021.2/
+Vitis workspace directory: /home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace
+Vitis workspace log file location: /home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /opt/Xilinx/Vitis/2021.2
+XILINX_SDK: /opt/Xilinx/Vitis/2021.2
+XILINX_VITIS: /opt/Xilinx/Vitis/2021.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2021.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+closeView("Welcome", "ViewIntroAdapterPart", "CTabItem.WELCOME");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("system_platform", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectTreeTable("system_platform", EventType.POPUP_TRIGGER_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectMenuItem("Open Platform Editor", "Assistant", "SDXAssistantView", "MenuItem.OPEN_PLATFORM_EDITOR");
+selectTree("standalone_ps7_cortexa9_0", "system_platform > ps7_cortexa9_0", "system_platform", "ScwEditor", "Tree");
+selectTree("Board Support Package", "system_platform > ps7_cortexa9_0 > standalone_ps7_cortexa9_0", "system_platform", "ScwEditor", "Tree");
+selectTab("Drivers", "Drivers", "ScwEditor", "TabItem.DRIVERS");
+selectButton("Modify BSP Settings", "system_platform", "ScwEditor", "Button.MODIFY_BSP_SETTINGS");
+selectTreeTable("Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("standalone", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("enable_sw_intrusive_profiling", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.PropertyProvider");
+selectTreeTable("ps7_cortexa9_0", "Overview > drivers", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("standalone", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("drivers", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("ps7_cortexa9_0", "Overview > drivers", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("extra_compiler_flags", "Overview > drivers", "Board Support Package Settings", "BspSettingsView", "TreeViewer.PropertyProvider");
+setTextField("-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta", "Board Support Package Settings", "BspSettingsView", "Text");
+selectButton("OK", "Board Support Package Settings", "BspSettingsView", "Button.OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab3", "lab3_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("helloworld.c", "lab3_system > lab3 > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectButton("OK", "Delete Resources", "RefactoringWizardDialog2", "Button.OK");
+selectTreeTable("src", "lab3_system > lab3", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Import Sources", "Explorer", "ProjectExplorer", "MenuItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("lab3", "Import Sources (File system)", "FileSystemImportWizard", "Tree.LAB3");
+selectTable("fir_coef.dat", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("fir.c", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("fir.h", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("lab3.c", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("lab3.h", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("xfir_fir_io.h", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectButton("Finish", "Import Sources (File system)", "FileSystemImportWizard", "Button.FINISH");
+selectToolBarButton("Build Debug for project lab3", "lab3", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTable("ps7_afi_1", "system_platform", "ScwEditor", "TableViewer.ArrayContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("src", "lab3_system > lab3", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("lab3.c", "lab3_system > lab3 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("system_platform", "system_platform/platform.spr", "ScwEditor", "CTabItem.SYSTEM_PLATFORM");
+selectTreeTable("src", "lab3_system > lab3", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project lab3", "lab3", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("lab3.c", "lab3_system > lab3 > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab3", "lab3_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("lab3_system", "lab3_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project lab3_system", "lab3_system", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("lab3", "lab3_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("system_platform", "lab3_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Clean Project", "Explorer", "ProjectExplorer", "MenuItem.CLEAN_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("system_platform", "lab3_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("lab3.c", "lab3_system > lab3 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab3", "lab3_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Clean Project", "Explorer", "ProjectExplorer", "MenuItem.CLEAN_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("lab3", "lab3_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectButton("OK", "Platform Invalid", "MessageDialog", "Button.OK");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("make", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab3", "lab3_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("system_platform", "lab3_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Update Hardware Specification", "Explorer", "ProjectExplorer", "MenuItem.UPDATE_HARDWARE");
+selectButton("OK", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.OK");
+selectButton("OK", "Update Hardware Specification", "MessageDialog", "Button.OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("system_platform", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTree("Board Support Package", "system_platform > ps7_cortexa9_0 > standalone_ps7_cortexa9_0", "system_platform", "ScwEditor", "Tree");
+selectTab("Drivers", "Drivers", "ScwEditor", "TabItem.DRIVERS");
+selectTree("ps7_cortexa9_0", "system_platform", "system_platform", "ScwEditor", "Tree");
+selectTree("standalone_ps7_cortexa9_0", "system_platform > ps7_cortexa9_0", "system_platform", "ScwEditor", "Tree");
+selectTree("Board Support Package", "system_platform > ps7_cortexa9_0 > standalone_ps7_cortexa9_0", "system_platform", "ScwEditor", "Tree");
+selectButton("Modify BSP Settings", "system_platform", "ScwEditor", "Button.MODIFY_BSP_SETTINGS");
+selectTreeTable("Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("standalone", "Overview", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("ps7_cortexa9_0", "Overview > drivers", "Board Support Package Settings", "BspSettingsView", "TreeViewer.NavInfoProvider");
+selectTreeTable("extra_compiler_flags", "Overview > drivers", "Board Support Package Settings", "BspSettingsView", "TreeViewer.PropertyProvider");
+setTextField("-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta", "Board Support Package Settings", "BspSettingsView", "Text");
+selectButton("OK", "Board Support Package Settings", "BspSettingsView", "Button.OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("system_platform", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Clean Project", "Explorer", "ProjectExplorer", "MenuItem.CLEAN_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("system_platform", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("Problems", "0 errors 1 warning 1 other", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("Warnings", "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab3", "lab3_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Clean Project", "Explorer", "ProjectExplorer", "MenuItem.CLEAN_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("lab3", "lab3_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("lab3.c", "lab3_system > lab3 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Xilinx", "lab3", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "lab3", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectButton("Program", "Program Device", "SdxProgramFpgaDialog", "Button.PROGRAM");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab3", "lab3_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("C/C++ Build Settings", "Explorer", "ProjectExplorer", "MenuItem.C_C++_BUILD_SETTINGS");
+selectTab("Tool Settings", "Properties for lab3", "PropertyDialog", "TabItem.TOOL_SETTINGS");
+selectTree("Symbols", "ARM v7 gcc compiler", "Properties for lab3", "PropertyDialog", "Tree");
+selectToolBarButton("Add", "Properties for lab3", "PropertyDialog", "ToolItem.ADD");
+selectButton("OK", "Enter Value", "SelectPathInputDialog", "Button.OK");
+selectTree("Profiling", "ARM v7 gcc compiler", "Properties for lab3", "PropertyDialog", "Tree");
+selectCheckBox("Enable Profiling", Boolean.TRUE, "Properties for lab3", "PropertyDialog", "Button.ENABLE_PROFILING");
+selectTree("Symbols", "ARM v7 gcc compiler", "Properties for lab3", "PropertyDialog", "Tree");
+selectButton("Apply and Close", "Properties for lab3", "PropertyDialog", "Button.APPLY_AND_CLOSE");
+selectButton("Yes", "Settings", "OptionalMessageDialog", "Button.YES");
+selectToolBarButton("Search", "lab3", "WorkbenchWindow", "ToolItem.SEARCH");
+selectToolBarMenuButton("Run", "lab3", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run Configurations", "Explorer", "ProjectExplorer", "MenuItem.RUN_CONFIGURATIONS");
+selectTree("Single Application Debug", EventType.DOUBLE_CLICK, "Run Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTab("Application", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.APPLICATION");
+selectButton("Edit", "Run Configurations", "LaunchConfigurationsDialog", "Button.EDIT");
+selectCheckBox("Enable Profiling", Boolean.TRUE, "Advanced Options", "AdvProcOptionsDialog", "Button.ENABLE_PROFILING");
+setTextField("100000", "Advanced Options", "AdvProcOptionsDialog", "Text.SAMPLING_FREQUENCY_(HZ)");
+setTextField("0x10000000", "Advanced Options", "AdvProcOptionsDialog", "Text.SCRATCH_MEMORY_ADDRESS_TO_COLLECT_PROFILE_DATA");
+selectButton("OK", "Advanced Options", "AdvProcOptionsDialog", "Button.OK");
+selectButton("Run", "Run Configurations", "LaunchConfigurationsDialog", "Button.RUN");
+selectButton("OK", "Gmon File Viewer binary file", "OpenGmonDialog", "Button.OK");
+activateView("gprof", "GmonView", "CTabItem.GPROF");
+selectToolBarButton("Sort samples per file", "gprof", "View:/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/lab3/Debug/gmon_out", "ToolItem.SORT_SAMPLES_PER");
+selectToolBarButton("Sort samples per function", "gprof", "View:/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/lab3/Debug/gmon_out", "ToolItem.SORT_SAMPLES_PER");
+activateView("gprof", "GmonView", "CTabItem.GPROF");
+selectToolBarButton("Sort samples per function", "gprof", "View:/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/lab3/Debug/gmon_out", "ToolItem.SORT_SAMPLES_PER");
+selectToolBarButton("Maximize", "gprof", "View:/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/lab3/Debug/gmon_out", "ToolItem.MAXIMIZE");
+selectTree("Summary", "gprof", "GmonView", "Tree.GmonDecoder");
+selectToolBarButton("Restore", "gprof", "View:/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/lab3/Debug/gmon_out", "ToolItem.RESTORE");
+activateView("gprof", "GmonView", "CTabItem.GPROF");
+selectMenuItem("Xilinx", "lab3", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "lab3", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectButton("Program", "Program Device", "SdxProgramFpgaDialog", "Button.PROGRAM");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab3", "lab3_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("C/C++ Build Settings", "Explorer", "ProjectExplorer", "MenuItem.C_C++_BUILD_SETTINGS");
+selectTab("Tool Settings", "Properties for lab3", "PropertyDialog", "TabItem.TOOL_SETTINGS");
+selectTree("Profiling", "ARM v7 gcc compiler", "Properties for lab3", "PropertyDialog", "Tree");
+selectButton("Apply and Close", "Properties for lab3", "PropertyDialog", "Button.APPLY_AND_CLOSE");
+selectToolBarMenuButton("Run", "lab3", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run Configurations", "Explorer", "ProjectExplorer", "MenuItem.RUN_CONFIGURATIONS");
+selectTab("Application", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.APPLICATION");
+selectTab("Main", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.MAIN");
+selectTab("Application", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.APPLICATION");
+selectButton("Edit", "Run Configurations", "LaunchConfigurationsDialog", "Button.EDIT");
+selectButton("OK", "Advanced Options", "AdvProcOptionsDialog", "Button.OK");
+selectButton("Run", "Run Configurations", "LaunchConfigurationsDialog", "Button.RUN");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectButton("OK", "Gmon File Viewer binary file", "OpenGmonDialog", "Button.OK");
+activateView("gprof", "GmonView", "CTabItem.GPROF");
+selectTree("filter_hw_accel_input", "Summary", "gprof", "GmonView", "Tree.GmonDecoder");
+selectTree("XUartPs_SendByte", "Summary", "gprof", "GmonView", "Tree.GmonDecoder");
+selectToolBarMenuButton("Run", "lab3", "WorkbenchWindow", "ToolItem.RUN");
+selectTree("Summary", "gprof", "GmonView", "Tree.GmonDecoder");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab3", "lab3_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Properties", "Explorer", "ProjectExplorer", "MenuItem.PROPERTIES");
+selectTab("Tool Settings", "Properties for lab3", "PropertyDialog", "TabItem.TOOL_SETTINGS");
+selectTree("Symbols", "ARM v7 gcc compiler", "Properties for lab3", "PropertyDialog", "Tree");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab3", "lab3_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Clean Project", "Explorer", "ProjectExplorer", "MenuItem.CLEAN_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("lab3", "lab3_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarMenuButton("Run", "lab3", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run Configurations", "Console", "WorkbenchWindow", "MenuItem.RUN_CONFIGURATIONS");
+selectTab("Application", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.APPLICATION");
+selectButton("Edit", "Run Configurations", "LaunchConfigurationsDialog", "Button.EDIT");
+selectButton("OK", "Advanced Options", "AdvProcOptionsDialog", "Button.OK");
+selectButton("Run", "Run Configurations", "LaunchConfigurationsDialog", "Button.RUN");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+selectMenuItem("Xilinx", "lab3", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "lab3", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectButton("Program", "Program Device", "SdxProgramFpgaDialog", "Button.PROGRAM");
+selectToolBarMenuButton("Run", "lab3", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("1 Debugger_lab3-Default", "Console", "WorkbenchWindow", "MenuItem.1_DEBUGGER_LAB3_DEFAULT");
+selectButton("OK", "Gmon File Viewer binary file", "OpenGmonDialog", "Button.OK");
+activateView("gprof", "GmonView", "CTabItem.GPROF");
+selectTreeTable("fir_coef.dat", "lab3_system > lab3 > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("lab3.c", "lab3/src/lab3.c", "CEditor", "CTabItem.LAB3_C");

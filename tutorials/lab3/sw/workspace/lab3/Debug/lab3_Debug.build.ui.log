@@ -1,0 +1,39 @@
+2023-02-22T17:34:12.82243700255-17:34:12 **** Build of configuration Debug for project lab3 ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000- 
+000-make --no-print-directory main-build
+000-Building file: ../src/fir.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -DSW_PROFILE -Wall -O0 -g3 -pg -c -fmessage-length=0 -MT"src/fir.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/fir.d" -MT"src/fir.o" -o "src/fir.o" "../src/fir.c"
+000-../src/fir.c: In function 'fir_software':
+000/lab3/src/fir.c17-1-1label 'loop' defined but not used [-Wunused-label]1-../src/fir.c:17:3: warning: label 'loop' defined but not used [-Wunused-label]
+000-   17 |   loop: for (i=N-1;i>=0;i--) {
+000-      |   ^~~~
+000-Finished building: ../src/fir.c
+000- 
+000-Building file: ../src/lab3.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -DSW_PROFILE -Wall -O0 -g3 -pg -c -fmessage-length=0 -MT"src/lab3.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/lab3.d" -MT"src/lab3.o" -o "src/lab3.o" "../src/lab3.c"
+000-Finished building: ../src/lab3.c
+000- 
+000-Building file: ../src/platform.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -DSW_PROFILE -Wall -O0 -g3 -pg -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+000-Finished building: ../src/platform.c
+000- 
+000-Building target: lab3.elf
+000-Invoking: ARM v7 gcc linker
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bsplib/lib -o "lab3.elf"  ./src/fir.o ./src/lab3.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-Finished building target: lab3.elf
+000- 
+000-Invoking: ARM v7 Print Size
+000-arm-none-eabi-size lab3.elf  |tee "lab3.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  30510	   1944	  22696	  55150	   d76e	lab3.elf
+000-Finished building: lab3.elf.size
+000- 
+00255-
+17:34:13 Build Finished (took 864ms)
+

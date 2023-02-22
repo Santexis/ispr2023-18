@@ -1,0 +1,30 @@
+timestamp=[2023-02-22 17:05:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.022, duration_ms=22, data={}
+timestamp=[2023-02-22 17:05:22], mode=APP_CREATION, duration=0:00:06.000, duration_ms=6000, data={name=lab3, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=system_platform, application_type=application}
+timestamp=[2023-02-22 17:05:30], mode=PLATFORM_GENERATION, duration=0:00:05.669, duration_ms=5669, data={name=system_platform}
+timestamp=[2023-02-22 17:05:32], mode=BUILD, duration=0:00:00.823, duration_ms=823, data={name=lab3, configuration=Debug, clean_build=false}
+timestamp=[2023-02-22 17:06:15], mode=WORKBENCH_START, duration=0:00:05.011, duration_ms=5011, data={}
+timestamp=[2023-02-22 17:06:15], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.035, duration_ms=35, data={}
+timestamp=[2023-02-22 17:06:15], mode=WORKBENCH_UI_INIT, duration=0:00:00.545, duration_ms=545, data={editors_count=0, platform_editors_count=0, projects_count=3, platform_projects_count=1, active_platform_editor=false, projects=lab3,lab3_system,system_platform}
+timestamp=[2023-02-22 17:13:54], mode=PLATFORM_GENERATION, duration=0:00:05.853, duration_ms=5853, data={name=system_platform}
+timestamp=[2023-02-22 17:13:55], mode=BUILD, duration=0:00:00.733, duration_ms=733, data={name=lab3, configuration=Debug, clean_build=false}
+timestamp=[2023-02-22 17:15:14], mode=PLATFORM_GENERATION, duration=0:00:05.749, duration_ms=5749, data={name=system_platform}
+timestamp=[2023-02-22 17:15:14], mode=BUILD, duration=0:00:00.670, duration_ms=670, data={name=lab3, configuration=Debug, clean_build=false}
+timestamp=[2023-02-22 17:15:34], mode=PLATFORM_GENERATION, duration=0:00:05.739, duration_ms=5739, data={name=system_platform}
+timestamp=[2023-02-22 17:15:34], mode=BUILD, duration=0:00:00.668, duration_ms=668, data={name=lab3, configuration=Debug, clean_build=false}
+timestamp=[2023-02-22 17:16:19], mode=PLATFORM_GENERATION, duration=0:00:05.728, duration_ms=5728, data={name=system_platform}
+timestamp=[2023-02-22 17:16:30], mode=PLATFORM_GENERATION, duration=0:00:05.725, duration_ms=5725, data={name=system_platform}
+timestamp=[2023-02-22 17:17:12], mode=PLATFORM_GENERATION, duration=0:00:05.690, duration_ms=5690, data={name=system_platform}
+timestamp=[2023-02-22 17:17:12], mode=BUILD, duration=0:00:00.619, duration_ms=619, data={name=lab3, configuration=Debug, clean_build=true}
+timestamp=[2023-02-22 17:17:23], mode=PLATFORM_GENERATION, duration=0:00:05.688, duration_ms=5688, data={name=system_platform}
+timestamp=[2023-02-22 17:18:46], mode=PLATFORM_GENERATION, duration=0:00:05.708, duration_ms=5708, data={name=system_platform}
+timestamp=[2023-02-22 17:20:09], mode=PLATFORM_GENERATION, duration=0:00:05.799, duration_ms=5799, data={name=system_platform}
+timestamp=[2023-02-22 17:20:17], mode=PLATFORM_GENERATION, duration=0:00:07.751, duration_ms=7751, data={name=system_platform}
+timestamp=[2023-02-22 17:20:46], mode=PLATFORM_GENERATION, duration=0:00:05.751, duration_ms=5751, data={name=system_platform}
+timestamp=[2023-02-22 17:20:47], mode=BUILD, duration=0:00:00.618, duration_ms=618, data={name=lab3, configuration=Debug, clean_build=true}
+timestamp=[2023-02-22 17:20:58], mode=PLATFORM_GENERATION, duration=0:00:07.780, duration_ms=7780, data={name=system_platform}
+timestamp=[2023-02-22 17:21:00], mode=BUILD, duration=0:00:00.877, duration_ms=877, data={name=lab3, configuration=Debug, clean_build=false}
+timestamp=[2023-02-22 17:34:01], mode=PLATFORM_GENERATION, duration=0:00:05.858, duration_ms=5858, data={name=system_platform}
+timestamp=[2023-02-22 17:34:02], mode=BUILD, duration=0:00:00.638, duration_ms=638, data={name=lab3, configuration=Debug, clean_build=true}
+timestamp=[2023-02-22 17:34:10], mode=PLATFORM_GENERATION, duration=0:00:07.795, duration_ms=7795, data={name=system_platform}
+timestamp=[2023-02-22 17:34:11], mode=BUILD, duration=0:00:00.626, duration_ms=626, data={name=lab3, configuration=Debug, clean_build=true}
+timestamp=[2023-02-22 17:34:13], mode=BUILD, duration=0:00:00.871, duration_ms=871, data={name=lab3, configuration=Debug, clean_build=false}
