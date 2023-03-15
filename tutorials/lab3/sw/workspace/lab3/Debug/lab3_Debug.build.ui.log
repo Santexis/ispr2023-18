@@ -1,39 +1,44 @@
-2023-02-22T17:34:12.82243700255-17:34:12 **** Build of configuration Debug for project lab3 ****
+2023-03-01T18:36:09.84956100255-18:36:09 **** Incremental Build of configuration Debug for project lab3 ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
 000- 
 000-make --no-print-directory main-build
-000-Building file: ../src/fir.c
+000-Building file: ../src/IRR.c
 000-Invoking: ARM v7 gcc compiler
-000-arm-none-eabi-gcc -DSW_PROFILE -Wall -O0 -g3 -pg -c -fmessage-length=0 -MT"src/fir.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/fir.d" -MT"src/fir.o" -o "src/fir.o" "../src/fir.c"
-000-../src/fir.c: In function 'fir_software':
-000/lab3/src/fir.c17-1-1label 'loop' defined but not used [-Wunused-label]1-../src/fir.c:17:3: warning: label 'loop' defined but not used [-Wunused-label]
-000-   17 |   loop: for (i=N-1;i>=0;i--) {
-000-      |   ^~~~
-000-Finished building: ../src/fir.c
-000- 
-000-Building file: ../src/lab3.c
-000-Invoking: ARM v7 gcc compiler
-000-arm-none-eabi-gcc -DSW_PROFILE -Wall -O0 -g3 -pg -c -fmessage-length=0 -MT"src/lab3.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/lab3.d" -MT"src/lab3.o" -o "src/lab3.o" "../src/lab3.c"
-000-Finished building: ../src/lab3.c
-000- 
-000-Building file: ../src/platform.c
-000-Invoking: ARM v7 gcc compiler
-000-arm-none-eabi-gcc -DSW_PROFILE -Wall -O0 -g3 -pg -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-000-Finished building: ../src/platform.c
-000- 
-000-Building target: lab3.elf
-000-Invoking: ARM v7 gcc linker
-000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bsplib/lib -o "lab3.elf"  ./src/fir.o ./src/lab3.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-000-Finished building target: lab3.elf
-000- 
-000-Invoking: ARM v7 Print Size
-000-arm-none-eabi-size lab3.elf  |tee "lab3.elf.size"
-000-   text	   data	    bss	    dec	    hex	filename
-000-  30510	   1944	  22696	  55150	   d76e	lab3.elf
-000-Finished building: lab3.elf.size
-000- 
+000-arm-none-eabi-gcc -DSW_PROFILE -Wall -O0 -g3 -pg -c -fmessage-length=0 -MT"src/IRR.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/IRR.d" -MT"src/IRR.o" -o "src/IRR.o" "../src/IRR.c"
+000/lab3/src/IRR.c5-1-1'LEN' undeclared here (not in a function)2LEN../src/IRR.c:5:38: error: 'LEN' undeclared here (not in a function)
+000-    5 | iir_direct_form_I_float(float output[LEN],
+000-      |                                      ^~~
+000/lab3/src/IRR.c7-1-1'M' undeclared here (not in a function)2M../src/IRR.c:7:10: error: 'M' undeclared here (not in a function)
+000-    7 |  float b[M],
+000-      |          ^
+000-../src/IRR.c: In function 'iir_direct_form_I_float':
+000/lab3/src/IRR.c15-1-1'current' undeclared (first use in this function)2current../src/IRR.c:15:5: error: 'current' undeclared (first use in this function)
+000-   15 | for(current=0; current<LEN; current++) {
+000-      |     ^~~~~~~
+000/lab3/src/IRR.c15-1-1each undeclared identifier is reported only once for each function it appears in0-../src/IRR.c:15:5: note: each undeclared identifier is reported only once for each function it appears in
+000/lab3/src/IRR.c15-1-1'LEN' undeclared (first use in this function)2LEN../src/IRR.c:15:24: error: 'LEN' undeclared (first use in this function)
+000-   15 | for(current=0; current<LEN; current++) {
+000-      |                        ^~~
+000/lab3/src/IRR.c17-1-1'i' undeclared (first use in this function)2i../src/IRR.c:17:10: error: 'i' undeclared (first use in this function)
+000-   17 |     for (i=0; i<M; i++){
+000-      |          ^
+000/lab3/src/IRR.c17-1-1'M' undeclared (first use in this function)2M../src/IRR.c:17:17: error: 'M' undeclared (first use in this function)
+000-   17 |     for (i=0; i<M; i++){
+000-      |                 ^
+000-../src/IRR.c: At top level:
+000/lab3/src/IRR.c30-1-1expected identifier or '(' before 'for'21:../src/IRR.c:30:1: error: expected identifier or '(' before 'for'
+000-   30 | for (filter=0; filter<=28; filters++){
+000-      | ^~~
+000/lab3/src/IRR.c30-1-1expected '=', ',', ';', 'asm' or '__attribute__' before '<=' token222:../src/IRR.c:30:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<=' token
+000-   30 | for (filter=0; filter<=28; filters++){
+000-      |                      ^~
+000/lab3/src/IRR.c30-1-1expected '=', ',', ';', 'asm' or '__attribute__' before '++' token235:../src/IRR.c:30:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+000-   30 | for (filter=0; filter<=28; filters++){
+000-      |                                   ^~
+000/lab30-1-1make[1]: *** [src/subdir.mk:32: src/IRR.o] Error 12-make[1]: *** [src/subdir.mk:32: src/IRR.o] Error 1
+000/lab30-1-1make: *** [makefile:34: all] Error 22-make: *** [makefile:34: all] Error 2
 00255-
-17:34:13 Build Finished (took 864ms)
+18:36:10 Build Finished (took 664ms)
 

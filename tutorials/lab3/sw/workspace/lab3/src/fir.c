@@ -14,7 +14,7 @@ void fir_software (
   int i;
   
   acc=(acc_t)shift_reg[N-1]*(acc_t)c[N];
-  loop: for (i=N-1;i>=0;i--) {
+  for (i=N-1;i>=0;i--) {
     acc+=(acc_t)shift_reg[i-1]*(acc_t)c[i];
     shift_reg[i]=shift_reg[i-1];
   }
@@ -22,3 +22,4 @@ void fir_software (
   shift_reg[0]=x;
   *y = acc>>15;
 }
+

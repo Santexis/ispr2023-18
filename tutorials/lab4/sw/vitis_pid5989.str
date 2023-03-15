@@ -1,0 +1,195 @@
+/*
+
+Xilinx Vitis v2021.2.0 (64-bit) [Major: 2021, Minor: 2]
+SW Build 3363750 on 2021-10-16-13:10:08
+
+Process ID (PID): 5989
+License: Customer
+
+Current time: 	Wed Mar 15 15:33:58 CET 2023
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Ubuntu
+OS Version: 5.15.0-48-generic
+OS Architecture: amd64
+Available processors (cores): 6
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 1
+Available disk space: 66 GB
+
+Java version: 	11.0.11 64-bit
+Java home: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9
+Java executable location: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /opt/Xilinx/Vitis/2021.2/tps/lnx64/javafx-sdk-11.0.2/lib:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib/:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib//server:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/python-3.8.3/lib:/opt/Xilinx/Vitis/2021.2/aietools/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /opt/Xilinx/Vitis/2021.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /opt/Xilinx/Vitis
+
+User name: 	ispr
+User home directory: /home/ispr
+User working directory: /home/ispr/Documentos/ispr/tutorials/lab4/sw
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vitis
+HDI_APPROOT: /opt/Xilinx/Vitis/2021.2
+RDI_DATADIR: /opt/Xilinx/Vitis/2021.2/data
+RDI_BINDIR: /opt/Xilinx/Vitis/2021.2/bin
+
+Vitis preferences directory: /home/ispr/.Xilinx/Vitis/2021.2/
+Vitis workspace directory: /home/ispr/Documentos/ispr/tutorials/lab4/sw/workspace
+Vitis workspace log file location: /home/ispr/Documentos/ispr/tutorials/lab4/sw/workspace/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /opt/Xilinx/Vitis/2021.2
+XILINX_SDK: /opt/Xilinx/Vitis/2021.2
+XILINX_VITIS: /opt/Xilinx/Vitis/2021.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2021.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectTreeTable("Debug", "lab4_system > lab4", "helloworld.c", "CEditor", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Xilinx", "lab4", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "lab4", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectMenuItem("Xilinx", "lab4", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "lab4", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectButton("Program", "Program Device", "SdxProgramFpgaDialog", "Button.PROGRAM");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab4", "lab4_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project lab4", "lab4", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("lab4", "lab4_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "lab4", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("xgpiops.h", "system_platform/export/system_platform/sw/system_pl", "CEditor", "CTabItem.XGPIOPS_H");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("Errors", "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+selectProblemsView("make ***", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("helloworld.c", "lab4/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectProblemsView("make ***", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+selectProblemsView("platform file not found /home/ispr/Documentos/ispr/", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("platform file not found /home/ispr/Documentos/ispr/", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("lab4", "lab4_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "lab4", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+activateView("Problems", "2 errors 0 warnings 0 others", "ProblemsView", "CTabItem.PROBLEMS");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("lab4", "lab4_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Problems", "2 errors 0 warnings 0 others", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("make ***", "Errors", "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("Debug", "lab4_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project lab4_system", "lab4_system", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("Problems", "0 items", "ProblemsView", "CTabItem.PROBLEMS");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+activateView("Problems", "0 items", "ProblemsView", "CTabItem.PROBLEMS");
+activateView("Problems", "2 errors 0 warnings 0 others", "ProblemsView", "CTabItem.PROBLEMS");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("lab4", "lab4_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "lab4", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+activateView("helloworld.c", "lab4/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectButton("OK", "Open Declaration", "Button", "OK");
+activateView("helloworld.c", "lab4/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectToolBarButton("Design", "lab4", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("Debug", "lab4", "WorkbenchWindow", "ToolItem.DEBUG");
+activateView("Vitis Serial Terminal", "Sdkterminal", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Debug", "lab4", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "lab4", "WorkbenchWindow", "ToolItem.DESIGN");
+selectMenuItem("Window", "lab4", "WorkbenchWindow", "MenuItem.WINDOW");
+selectMenuItem("Show view", "lab4", "WorkbenchWindow", "MenuItem.SHOW_VIEW");
+setTextField("terminal", "Show View", "ShowViewDialog", "Text");
+selectTree("Vitis Serial Terminal", "Xilinx", "Show View", "ShowViewDialog", "Tree.ApplicationImpl");
+selectButton("Open", "Show View", "ShowViewDialog", "Button.OPEN");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+activateView("Search", "SearchView", "CTabItem.SEARCH");
+selectToolBarButton("Connect to serial port", "Vitis Serial Terminal", "SDKTerminalView", "ToolItem.CONNECT_TO_SERIAL");
+selectCombo("/dev/ttyUSB1", "Connect to serial port", "SerialConnectionDialog", "ComboViewer.PORT");
+selectButton("OK", "Connect to serial port", "SerialConnectionDialog", "Button.OK");
+selectToolBarMenuButton("Run", "lab4", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("1 Debugger_lab4-Default", "Vitis Serial Terminal", "WorkbenchWindow", "MenuItem.1_DEBUGGER_LAB4_DEFAULT");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+selectMenuItem("Xilinx", "lab4", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "lab4", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectButton("Program", "Program Device", "SdxProgramFpgaDialog", "Button.PROGRAM");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarMenuButton("Run", "lab4", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("1 Debugger_lab4-Default", "Console", "WorkbenchWindow", "MenuItem.1_DEBUGGER_LAB4_DEFAULT");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarMenuButton("Debug", "lab4", "WorkbenchWindow", "ToolItem.DEBUG");
+selectMenuItem("1 Debugger_lab4-Default", "helloworld.c", "WorkbenchWindow", "MenuItem.1_DEBUGGER_LAB4_DEFAULT");
+activateView("Memory", "MemoryView", "CTabItem.MEMORY");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+selectMenuItem("Xilinx", "lab4", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "lab4", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectButton("Program", "Program Device", "SdxProgramFpgaDialog", "Button.PROGRAM");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarMenuButton("Debug", "lab4", "WorkbenchWindow", "ToolItem.DEBUG");
+selectMenuItem("1 Debugger_lab4-Default", "Console", "WorkbenchWindow", "MenuItem.1_DEBUGGER_LAB4_DEFAULT");
+selectToolBarMenuButton("Debug", "lab4", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Resume", "lab4", "WorkbenchWindow", "ToolItem.RESUME");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Resume", "lab4", "WorkbenchWindow", "ToolItem.RESUME");
+selectToolBarButton("Step Over", "lab4", "WorkbenchWindow", "ToolItem.STEP_OVER");
+selectToolBarButton("Step Into", "lab4", "WorkbenchWindow", "ToolItem.STEP_INTO");
+selectToolBarButton("Step Over", "system_platform", "WorkbenchWindow", "ToolItem.STEP_OVER");
+activateView("Variables", "VariablesView", "CTabItem.VARIABLES");
+activateView("Expressions", "ExpressionView", "CTabItem.EXPRESSIONS");
+selectTree("Add new expression", "Expressions", "ExpressionView", "Tree.ADD_NEW_EXPRESSION");
+setTextField("e000a000", "Expressions", "ExpressionView", "Text");
+activateView("Variables", "VariablesView", "CTabItem.VARIABLES");
+activateView("Expressions", "ExpressionView", "CTabItem.EXPRESSIONS");
+selectTree("e000a000", "Expressions", "ExpressionView", "Tree.E000A000");
+activateView("Variables", "VariablesView", "CTabItem.VARIABLES");
+activateView("Expressions", "ExpressionView", "CTabItem.EXPRESSIONS");
+activateView("Variables", "VariablesView", "CTabItem.VARIABLES");
+selectToolBarButton("Step Over", "system_platform", "WorkbenchWindow", "ToolItem.STEP_OVER");
+activateView("Registers", "RegistersView", "CTabItem.REGISTERS");
+activateView("Modules", "ModulesView", "CTabItem.MODULES");
+activateView("Registers", "RegistersView", "CTabItem.REGISTERS");
+selectMenuItem("Window", "system_platform", "WorkbenchWindow", "MenuItem.WINDOW");
+selectMenuItem("Show view", "system_platform", "WorkbenchWindow", "MenuItem.SHOW_VIEW");
+selectTree("Debug", "Show View", "ShowViewDialog", "Tree.ApplicationImpl");
+selectTree("General", "Show View", "ShowViewDialog", "Tree.ApplicationImpl");
+selectButton("Cancel", "Open Declaration", "Button", "CANCEL");
+selectToolBarButton("Step Into", "system_platform", "WorkbenchWindow", "ToolItem.STEP_INTO");
+activateView("Variables", "VariablesView", "CTabItem.VARIABLES");
+selectTree("PinNumber", "Variables", "VariablesView", "Tree.PINNUMBER");
+selectToolBarButton("Step Over", "system_platform", "WorkbenchWindow", "ToolItem.STEP_OVER");
+selectToolBarButton("Step Into", "system_platform", "WorkbenchWindow", "ToolItem.STEP_INTO");
+selectToolBarButton("Step Into", "lab4", "WorkbenchWindow", "ToolItem.STEP_INTO");
+selectToolBarButton("Step Into", "system_platform", "WorkbenchWindow", "ToolItem.STEP_INTO");
+selectToolBarButton("Step Into", "lab4", "WorkbenchWindow", "ToolItem.STEP_INTO");
+selectToolBarButton("Resume", "system_platform", "WorkbenchWindow", "ToolItem.RESUME");
+selectToolBarButton("Suspend", "system_platform", "WorkbenchWindow", "ToolItem.SUSPEND");
+selectToolBarButton("Disconnect", "lab4", "WorkbenchWindow", "ToolItem.DISCONNECT");
+selectMenuItem("File", "lab4", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("Switch Workspace", "lab4", "WorkbenchWindow", "MenuItem.SWITCH_WORKSPACE");
+selectMenuItem("/home/ispr/Documentos/ispr/tutorials/lab1/sw/worksp", "lab4", "WorkbenchWindow", "MenuItem._HOME_ISPR_DOCUMENTOS_ISPR_TUTORIALS_LAB1_SW_WORKSP");
+// Exiting Xilinx Vitis with a status code '0' at 3/15/23, 4:03:49 PM CET
+// Elapsed time: 00:29:51
+

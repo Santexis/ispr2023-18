@@ -17289,3 +17289,45 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-33: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2023-02-08 19:35:34.172
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-33: Launching Debugger_lab1-Default_1
+!SESSION 2023-03-15 16:03:50.575 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-03-15 16:03:51.622
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2023-03-15 16:03:53.817
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-15 16:03:58.623
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-15 16:03:58.623
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-15 16:03:58.624
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-15 16:03:58.689
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-15 16:03:58.690
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-15 16:03:58.691
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-15 16:03:58.691
+!MESSAGE XSCT Command: [setws /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-15 16:03:58.691
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-15 16:03:58.695
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /opt/Xilinx/Vitis/2021.2/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-15 16:03:58.695
+!MESSAGE XSCT command with result: [setws /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace], Result: [null, ]. Thread: Thread-26

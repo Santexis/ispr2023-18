@@ -1,0 +1,284 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Feb 15 16:21:40 2023
+# Process ID: 10527
+# Current directory: /home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.runs/impl_1
+# Command line: vivado -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+# Log file: /home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.runs/impl_1/system_wrapper.vdi
+# Journal file: /home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.runs/impl_1/vivado.jou
+# Running On: pc-b042-18, OS: Linux, CPU Frequency: 2800.000 MHz, CPU Physical cores: 6, Host memory: 16654 MB
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+Command: link_design -top system_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_leds_0/system_leds_0.dcp' for cell 'system_i/leds'
+INFO: [Project 1-454] Reading design checkpoint '/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp' for cell 'system_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_switches_0/system_switches_0.dcp' for cell 'system_i/switches'
+INFO: [Project 1-454] Reading design checkpoint '/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2603.262 ; gain = 0.000 ; free physical = 6625 ; free virtual = 12623
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_leds_0/system_leds_0_board.xdc] for cell 'system_i/leds/U0'
+Finished Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_leds_0/system_leds_0_board.xdc] for cell 'system_i/leds/U0'
+Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_leds_0/system_leds_0.xdc] for cell 'system_i/leds/U0'
+Finished Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_leds_0/system_leds_0.xdc] for cell 'system_i/leds/U0'
+Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_switches_0/system_switches_0_board.xdc] for cell 'system_i/switches/U0'
+Finished Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_switches_0/system_switches_0_board.xdc] for cell 'system_i/switches/U0'
+Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_switches_0/system_switches_0.xdc] for cell 'system_i/switches/U0'
+Finished Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.gen/sources_1/bd/system/ip/system_switches_0/system_switches_0.xdc] for cell 'system_i/switches/U0'
+Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc]
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/ispr/Documentos/ispr/tutorials/lab2/hw/src/constr/lab2.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2763.266 ; gain = 0.000 ; free physical = 6520 ; free virtual = 12520
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+16 Infos, 8 Warnings, 8 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2763.266 ; gain = 160.078 ; free physical = 6520 ; free virtual = 12520
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 6 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:00.61 . Memory (MB): peak = 2763.266 ; gain = 0.000 ; free physical = 6519 ; free virtual = 12517
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 13d8a75f5
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2763.266 ; gain = 0.000 ; free physical = 6134 ; free virtual = 12147
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter system_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/m_atarget_enc[1]_i_1 into driver instance system_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/m_atarget_hot[2]_i_2, which resulted in an inversion of 5 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1749267da
+
+Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2997.090 ; gain = 0.000 ; free physical = 5903 ; free virtual = 11916
+INFO: [Opt 31-389] Phase Retarget created 6 cells and removed 38 cells
+INFO: [Opt 31-1021] In phase Retarget, 5 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1749267da
+
+Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2997.090 ; gain = 0.000 ; free physical = 5903 ; free virtual = 11916
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1cb9c245c
+
+Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2997.090 ; gain = 0.000 ; free physical = 5903 ; free virtual = 11917
+INFO: [Opt 31-389] Phase Sweep created 4 cells and removed 103 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1cb9c245c
+
+Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2997.090 ; gain = 0.000 ; free physical = 5903 ; free virtual = 11917
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1cb9c245c
+
+Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2997.090 ; gain = 0.000 ; free physical = 5903 ; free virtual = 11917
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 18a4fb2ac
+
+Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2997.090 ; gain = 0.000 ; free physical = 5903 ; free virtual = 11917
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               6  |              38  |                                              5  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               4  |             103  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2997.090 ; gain = 0.000 ; free physical = 5903 ; free virtual = 11917
+Ending Logic Optimization Task | Checksum: 113906758
+
+Time (s): cpu = 00:00:00.40 ; elapsed = 00:00:00.30 . Memory (MB): peak = 2997.090 ; gain = 0.000 ; free physical = 5903 ; free virtual = 11917
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 113906758
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2997.090 ; gain = 0.000 ; free physical = 5902 ; free virtual = 11916
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 113906758
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2997.090 ; gain = 0.000 ; free physical = 5902 ; free virtual = 11916
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2997.090 ; gain = 0.000 ; free physical = 5902 ; free virtual = 11916
+Ending Netlist Obfuscation Task | Checksum: 113906758
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2997.090 ; gain = 0.000 ; free physical = 5902 ; free virtual = 11916
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 8 Warnings, 8 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2997.090 ; gain = 233.824 ; free physical = 5902 ; free virtual = 11916
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3037.109 ; gain = 0.000 ; free physical = 5900 ; free virtual = 11915
+INFO: [Common 17-1381] The checkpoint '/home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.runs/impl_1/system_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+Command: report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 6 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/ispr/Documentos/ispr/tutorials/lab2/hw/project/lab2.runs/impl_1/system_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 6 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 6 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 6 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3169.629 ; gain = 0.000 ; free physical = 5822 ; free virtual = 11839
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: d2c8a008
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3169.629 ; gain = 0.000 ; free physical = 5822 ; free virtual = 11839
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3169.629 ; gain = 0.000 ; free physical = 5822 ; free virtual = 11839
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (1) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  BiDi RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 1 sites.
+	Term: btn_tri_io[0]
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (1) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  BiDi RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 1 sites.
+	Term: btn_tri_io[0]
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     3 | LVCMOS33(3)                                                            |                                          |        |  +3.30 |    YES |     |
+| 35 |    50 |     5 | LVCMOS33(5)                                                            |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   100 |     8 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | sws_4bits_tri_i[1]   | LVCMOS33        | IOB_X0Y2             | P15                  |                      |
+|        | sws_4bits_tri_i[2]   | LVCMOS33        | IOB_X0Y41            | W13                  |                      |
+|        | sws_4bits_tri_i[3]   | LVCMOS33        | IOB_X0Y32            | T16                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | leds_4bits_tri_o[0]  | LVCMOS33        | IOB_X0Y54            | M14                  |                      |
+|        | leds_4bits_tri_o[1]  | LVCMOS33        | IOB_X0Y53            | M15                  |                      |
+|        | leds_4bits_tri_o[2]  | LVCMOS33        | IOB_X0Y99            | G14                  |                      |
+|        | leds_4bits_tri_o[3]  | LVCMOS33        | IOB_X0Y93            | D18                  |                      |
+|        | sws_4bits_tri_i[0]   | LVCMOS33        | IOB_X0Y61            | G15                  | *                    |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 12fe9097f
+
+Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.28 . Memory (MB): peak = 3169.629 ; gain = 0.000 ; free physical = 5843 ; free virtual = 11861
+Phase 1 Placer Initialization | Checksum: 12fe9097f
+
+Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.28 . Memory (MB): peak = 3169.629 ; gain = 0.000 ; free physical = 5843 ; free virtual = 11861
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 12fe9097f
+
+Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.28 . Memory (MB): peak = 3169.629 ; gain = 0.000 ; free physical = 5843 ; free virtual = 11861
+INFO: [Common 17-83] Releasing license: Implementation
+51 Infos, 8 Warnings, 8 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 15 16:22:10 2023...

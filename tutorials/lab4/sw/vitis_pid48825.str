@@ -1,0 +1,90 @@
+/*
+
+Xilinx Vitis v2021.2.0 (64-bit) [Major: 2021, Minor: 2]
+SW Build 3363750 on 2021-10-16-13:10:08
+
+Process ID (PID): 48825
+License: Customer
+
+Current time: 	Wed Mar 08 18:29:06 CET 2023
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Ubuntu
+OS Version: 5.15.0-48-generic
+OS Architecture: amd64
+Available processors (cores): 6
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 1
+Available disk space: 66 GB
+
+Java version: 	11.0.11 64-bit
+Java home: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9
+Java executable location: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /opt/Xilinx/Vitis/2021.2/tps/lnx64/javafx-sdk-11.0.2/lib:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib/:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib//server:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/python-3.8.3/lib:/opt/Xilinx/Vitis/2021.2/aietools/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /opt/Xilinx/Vitis/2021.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /opt/Xilinx/Vitis
+
+User name: 	ispr
+User home directory: /home/ispr
+User working directory: /home/ispr/Documentos/ispr/tutorials/lab4/sw
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vitis
+HDI_APPROOT: /opt/Xilinx/Vitis/2021.2
+RDI_DATADIR: /opt/Xilinx/Vitis/2021.2/data
+RDI_BINDIR: /opt/Xilinx/Vitis/2021.2/bin
+
+Vitis preferences directory: /home/ispr/.Xilinx/Vitis/2021.2/
+Vitis workspace directory: /home/ispr/Documentos/ispr/tutorials/lab4/sw/worksace
+Vitis workspace log file location: /home/ispr/Documentos/ispr/tutorials/lab4/sw/worksace/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /opt/Xilinx/Vitis/2021.2
+XILINX_SDK: /opt/Xilinx/Vitis/2021.2
+XILINX_VITIS: /opt/Xilinx/Vitis/2021.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2021.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectMenuItem("File", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("Open File", "WorkbenchWindow", "MenuItem.OPEN_FILE");
+selectTextEditor("helloworld.c", "/home/ispr/Documentos/ispr/tutorials/lab4/sw/worksp", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.HELLOWORLD_C");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectToolBarButton("Collapse All", "Explorer", "ProjectExplorer", "ToolItem.COLLAPSE_ALL");
+selectToolBarButton("Import Sources", "Explorer", "ProjectExplorer", "ToolItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("system_platform", "Import Sources (File system)", "FileSystemImportWizard", "Tree.SYSTEM_PLATFORM");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("workspace", "Import Sources (File system)", "FileSystemImportWizard", "Tree.WORKSPACE");
+selectTree("lab4_system", "workspace", "Import Sources (File system)", "FileSystemImportWizard", "Tree.LAB4_SYSTEM");
+selectTree("system_platform", "workspace", "Import Sources (File system)", "FileSystemImportWizard", "Tree.SYSTEM_PLATFORM");
+selectTree("lab4_system", "workspace", "Import Sources (File system)", "FileSystemImportWizard", "Tree.LAB4_SYSTEM");
+selectTree("system_platform", "workspace", "Import Sources (File system)", "FileSystemImportWizard", "Tree.SYSTEM_PLATFORM");
+selectTable("platform.spr", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("platform.tcl", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("platform.spr", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("platform.tcl", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTree("lab4_system", "workspace", "Import Sources (File system)", "FileSystemImportWizard", "Tree.LAB4_SYSTEM");
+selectTree("system_platform", "workspace", "Import Sources (File system)", "FileSystemImportWizard", "Tree.SYSTEM_PLATFORM");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+selectButton("Dont Save", "Save Resource", "Button", "DONT_SAVE");
+// Exiting Xilinx Vitis with a status code '0' at 3/8/23, 6:34:04 PM CET
+// Elapsed time: 00:04:57
+

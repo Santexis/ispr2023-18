@@ -1,39 +1,44 @@
-17:34:12 **** Build of configuration Debug for project lab3 ****
+18:36:09 **** Incremental Build of configuration Debug for project lab3 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
  
 make --no-print-directory main-build
-Building file: ../src/fir.c
+Building file: ../src/IRR.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -DSW_PROFILE -Wall -O0 -g3 -pg -c -fmessage-length=0 -MT"src/fir.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/fir.d" -MT"src/fir.o" -o "src/fir.o" "../src/fir.c"
-../src/fir.c: In function 'fir_software':
-../src/fir.c:17:3: warning: label 'loop' defined but not used [-Wunused-label]
-   17 |   loop: for (i=N-1;i>=0;i--) {
-      |   ^~~~
-Finished building: ../src/fir.c
- 
-Building file: ../src/lab3.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -DSW_PROFILE -Wall -O0 -g3 -pg -c -fmessage-length=0 -MT"src/lab3.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/lab3.d" -MT"src/lab3.o" -o "src/lab3.o" "../src/lab3.c"
-Finished building: ../src/lab3.c
- 
-Building file: ../src/platform.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -DSW_PROFILE -Wall -O0 -g3 -pg -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-Finished building: ../src/platform.c
- 
-Building target: lab3.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bsplib/lib -o "lab3.elf"  ./src/fir.o ./src/lab3.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: lab3.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size lab3.elf  |tee "lab3.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  30510	   1944	  22696	  55150	   d76e	lab3.elf
-Finished building: lab3.elf.size
- 
+arm-none-eabi-gcc -DSW_PROFILE -Wall -O0 -g3 -pg -c -fmessage-length=0 -MT"src/IRR.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/system_platform/export/system_platform/sw/system_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/IRR.d" -MT"src/IRR.o" -o "src/IRR.o" "../src/IRR.c"
+../src/IRR.c:5:38: error: 'LEN' undeclared here (not in a function)
+    5 | iir_direct_form_I_float(float output[LEN],
+      |                                      ^~~
+../src/IRR.c:7:10: error: 'M' undeclared here (not in a function)
+    7 |  float b[M],
+      |          ^
+../src/IRR.c: In function 'iir_direct_form_I_float':
+../src/IRR.c:15:5: error: 'current' undeclared (first use in this function)
+   15 | for(current=0; current<LEN; current++) {
+      |     ^~~~~~~
+../src/IRR.c:15:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/IRR.c:15:24: error: 'LEN' undeclared (first use in this function)
+   15 | for(current=0; current<LEN; current++) {
+      |                        ^~~
+../src/IRR.c:17:10: error: 'i' undeclared (first use in this function)
+   17 |     for (i=0; i<M; i++){
+      |          ^
+../src/IRR.c:17:17: error: 'M' undeclared (first use in this function)
+   17 |     for (i=0; i<M; i++){
+      |                 ^
+../src/IRR.c: At top level:
+../src/IRR.c:30:1: error: expected identifier or '(' before 'for'
+   30 | for (filter=0; filter<=28; filters++){
+      | ^~~
+../src/IRR.c:30:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<=' token
+   30 | for (filter=0; filter<=28; filters++){
+      |                      ^~
+../src/IRR.c:30:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+   30 | for (filter=0; filter<=28; filters++){
+      |                                   ^~
+make[1]: *** [src/subdir.mk:32: src/IRR.o] Error 1
+make: *** [makefile:34: all] Error 2
 
-17:34:13 Build Finished (took 864ms)
+18:36:10 Build Finished (took 664ms)
 

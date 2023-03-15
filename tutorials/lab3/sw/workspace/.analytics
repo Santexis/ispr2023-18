@@ -28,3 +28,14 @@ timestamp=[2023-02-22 17:34:02], mode=BUILD, duration=0:00:00.638, duration_ms=6
 timestamp=[2023-02-22 17:34:10], mode=PLATFORM_GENERATION, duration=0:00:07.795, duration_ms=7795, data={name=system_platform}
 timestamp=[2023-02-22 17:34:11], mode=BUILD, duration=0:00:00.626, duration_ms=626, data={name=lab3, configuration=Debug, clean_build=true}
 timestamp=[2023-02-22 17:34:13], mode=BUILD, duration=0:00:00.871, duration_ms=871, data={name=lab3, configuration=Debug, clean_build=false}
+timestamp=[2023-02-22 18:36:54], mode=APP_CREATION, duration=0:00:05.962, duration_ms=5962, data={name=firDir, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=system_platform, application_type=application}
+timestamp=[2023-03-01 15:39:35], mode=WORKBENCH_START, duration=0:00:05.400, duration_ms=5400, data={}
+timestamp=[2023-03-01 15:39:35], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.035, duration_ms=35, data={}
+timestamp=[2023-03-01 15:39:36], mode=WORKBENCH_UI_INIT, duration=0:00:01.341, duration_ms=1341, data={editors_count=4, platform_editors_count=1, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,firDir,firDir_system,lab3,lab3_system,system_platform}
+timestamp=[2023-03-01 15:46:05], mode=PLATFORM_GENERATION, duration=0:00:05.888, duration_ms=5888, data={name=system_platform}
+timestamp=[2023-03-01 15:46:07], mode=BUILD, duration=0:00:00.762, duration_ms=762, data={name=lab3, configuration=Debug, clean_build=false}
+timestamp=[2023-03-01 15:46:15], mode=BUILD, duration=0:00:00.729, duration_ms=729, data={name=lab3, configuration=Debug, clean_build=false}
+timestamp=[2023-03-01 18:33:27], mode=BUILD, duration=0:00:00.622, duration_ms=622, data={name=lab3, configuration=Debug, clean_build=true}
+timestamp=[2023-03-01 18:33:27], mode=BUILD, duration=0:00:00.640, duration_ms=640, data={name=lab3, configuration=Debug, clean_build=false}
+timestamp=[2023-03-01 18:34:34], mode=BUILD, duration=0:00:00.667, duration_ms=667, data={name=lab3, configuration=Debug, clean_build=false}
+timestamp=[2023-03-01 18:36:10], mode=BUILD, duration=0:00:00.669, duration_ms=669, data={name=lab3, configuration=Debug, clean_build=false}

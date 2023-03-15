@@ -1,0 +1,72 @@
+/*
+
+Xilinx Vitis v2021.2.0 (64-bit) [Major: 2021, Minor: 2]
+SW Build 3363750 on 2021-10-16-13:10:08
+
+Process ID (PID): 9569
+License: Customer
+
+Current time: 	Wed Mar 15 16:03:58 CET 2023
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Ubuntu
+OS Version: 5.15.0-48-generic
+OS Architecture: amd64
+Available processors (cores): 6
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 1
+Available disk space: 66 GB
+
+Java version: 	11.0.11 64-bit
+Java home: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9
+Java executable location: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /opt/Xilinx/Vitis/2021.2/tps/lnx64/javafx-sdk-11.0.2/lib:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib/:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib//server:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/python-3.8.3/lib:/opt/Xilinx/Vitis/2021.2/aietools/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /opt/Xilinx/Vitis/2021.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /opt/Xilinx/Vitis
+
+User name: 	ispr
+User home directory: /home/ispr
+User working directory: /home/ispr/Documentos/ispr/tutorials/lab4/sw
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vitis
+HDI_APPROOT: /opt/Xilinx/Vitis/2021.2
+RDI_DATADIR: /opt/Xilinx/Vitis/2021.2/data
+RDI_BINDIR: /opt/Xilinx/Vitis/2021.2/bin
+
+Vitis preferences directory: /home/ispr/.Xilinx/Vitis/2021.2/
+Vitis workspace directory: /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace
+Vitis workspace log file location: /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /opt/Xilinx/Vitis/2021.2
+XILINX_SDK: /opt/Xilinx/Vitis/2021.2
+XILINX_VITIS: /opt/Xilinx/Vitis/2021.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2021.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectTreeTable("Debug", "lab1_system > lab1", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("File", "lab1", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("Switch Workspace", "lab1", "WorkbenchWindow", "MenuItem.SWITCH_WORKSPACE");
+selectMenuItem("/home/ispr/Documentos/ispr/tutorials/lab2/sw/worksp", "lab1", "WorkbenchWindow", "MenuItem._HOME_ISPR_DOCUMENTOS_ISPR_TUTORIALS_LAB2_SW_WORKSP");
+// Exiting Xilinx Vitis with a status code '0' at 3/15/23, 4:04:10 PM CET
+// Elapsed time: 00:00:12
+

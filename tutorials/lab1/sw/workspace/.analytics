@@ -44,3 +44,6 @@ timestamp=[2023-02-08 19:31:09], mode=BUILD, duration=0:00:00.775, duration_ms=7
 timestamp=[2023-02-08 19:33:29], mode=BUILD, duration=0:00:00.721, duration_ms=721, data={name=lab1, configuration=Debug, clean_build=false}
 timestamp=[2023-02-08 19:34:06], mode=BUILD, duration=0:00:00.728, duration_ms=728, data={name=lab1, configuration=Debug, clean_build=false}
 timestamp=[2023-02-08 19:35:18], mode=BUILD, duration=0:00:00.620, duration_ms=620, data={name=lab1, configuration=Debug, clean_build=false}
+timestamp=[2023-03-15 16:03:56], mode=WORKBENCH_START, duration=0:00:04.998, duration_ms=4998, data={}
+timestamp=[2023-03-15 16:03:57], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.057, duration_ms=57, data={}
+timestamp=[2023-03-15 16:03:58], mode=WORKBENCH_UI_INIT, duration=0:00:01.493, duration_ms=1493, data={editors_count=8, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,lab1,lab1_system,system_wrapper}

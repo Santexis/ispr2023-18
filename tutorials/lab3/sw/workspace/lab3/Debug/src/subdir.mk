@@ -7,16 +7,19 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 C_SRCS += \
+../src/IRR.c \
 ../src/fir.c \
 ../src/lab3.c \
 ../src/platform.c 
 
 OBJS += \
+./src/IRR.o \
 ./src/fir.o \
 ./src/lab3.o \
 ./src/platform.o 
 
 C_DEPS += \
+./src/IRR.d \
 ./src/fir.d \
 ./src/lab3.d \
 ./src/platform.d 

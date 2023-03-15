@@ -1090,3 +1090,11 @@ con
 ----------------End of Script----------------
 
 19:35:34 INFO  : Launch script is exported to file '/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1_system/_ide/scripts/debugger_lab1-default_1.tcl'
+16:03:55 INFO  : Launching XSCT server: xsct -n  -interactive /home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/temp_xsdb_launch_script.tcl
+16:03:57 INFO  : Platform repository initialization has completed.
+16:03:57 INFO  : Registering command handlers for Vitis TCF services
+16:03:58 INFO  : XSCT server has started successfully.
+16:03:58 INFO  : Successfully done setting XSCT server connection channel  
+16:03:58 INFO  : plnx-install-location is set to ''
+16:03:58 INFO  : Successfully done query RDI_DATADIR 
+16:03:58 INFO  : Successfully done setting workspace for the tool. 

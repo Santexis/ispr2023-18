@@ -1,0 +1,330 @@
+/*
+
+Xilinx Vitis v2021.2.0 (64-bit) [Major: 2021, Minor: 2]
+SW Build 3363750 on 2021-10-16-13:10:08
+
+Process ID (PID): 20805
+License: Customer
+
+Current time: 	Wed Feb 15 16:59:05 CET 2023
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Ubuntu
+OS Version: 5.15.0-48-generic
+OS Architecture: amd64
+Available processors (cores): 6
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 1
+Available disk space: 66 GB
+
+Java version: 	11.0.11 64-bit
+Java home: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9
+Java executable location: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /opt/Xilinx/Vitis/2021.2/tps/lnx64/javafx-sdk-11.0.2/lib:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib/:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib//server:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/python-3.8.3/lib:/opt/Xilinx/Vitis/2021.2/aietools/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /opt/Xilinx/Vitis/2021.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /opt/Xilinx/Vitis
+
+User name: 	ispr
+User home directory: /home/ispr
+User working directory: /home/ispr/Documentos/ispr/tutorials/lab2/sw
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vitis
+HDI_APPROOT: /opt/Xilinx/Vitis/2021.2
+RDI_DATADIR: /opt/Xilinx/Vitis/2021.2/data
+RDI_BINDIR: /opt/Xilinx/Vitis/2021.2/bin
+
+Vitis preferences directory: /home/ispr/.Xilinx/Vitis/2021.2/
+Vitis workspace directory: /home/ispr/Documentos/ispr/tutorials/lab2/sw/workspace
+Vitis workspace log file location: /home/ispr/Documentos/ispr/tutorials/lab2/sw/workspace/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /opt/Xilinx/Vitis/2021.2
+XILINX_SDK: /opt/Xilinx/Vitis/2021.2
+XILINX_VITIS: /opt/Xilinx/Vitis/2021.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2021.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectMenuItem("File", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("Open File", "WorkbenchWindow", "MenuItem.OPEN_FILE");
+activateView("Welcome", "ViewIntroAdapterPart", "CTabItem.WELCOME");
+selectTreeTable("Debug", "lab2_system > lab2", "helloworld.c", "CEditor", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Welcome", "ViewIntroAdapterPart", "CTabItem.WELCOME");
+closeView("Welcome", "ViewIntroAdapterPart", "CTabItem.WELCOME");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("helloworld.c", "lab2_system > lab2 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+closeView("helloworld.c", "lab2/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectTreeTable("helloworld.c", "lab2_system > lab2 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("File", "lab2", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("Open File", "lab2", "WorkbenchWindow", "MenuItem.OPEN_FILE");
+closeView("helloworld.c", "/home/ispr/Documentos/ispr/tutorials/lab1/sw/workspace/lab1/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectToolBarButton("Build Debug for project lab2", "lab2", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab2_system > lab2", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarMenuButton("New", "lab2", "WorkbenchWindow", "ToolItem.NEW");
+selectToolBarMenuButton("Display Selected Console", "Console", "ConsoleView", "ToolItem.DISPLAY_SELECTED");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "lab2", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectToolBarButton("Build Debug for project lab2", "lab2", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab2_system > lab2", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project lab2", "lab2", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab2_system > lab2", "helloworld.c", "CEditor", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTextEditor("helloworld.c", "lab2/src/helloworld.c", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.HELLOWORLD_C");
+selectToolBarButton("Build Debug for project lab2", "lab2", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab2_system > lab2", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "lab2", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+selectToolBarButton("Build Debug for project lab2", "lab2", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab2_system > lab2", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "lab2", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectToolBarButton("Build Debug for project lab2", "lab2", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab2_system > lab2", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project lab2", "lab2", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "lab2", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+activateView("Vitis Log", "SdkLogView", "CTabItem.VITIS_LOG");
+activateView("Guidance", "SDXDrcView", "CTabItem.GUIDANCE");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project lab2", "lab2", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab2_system > lab2", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "lab2", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectToolBarButton("Build Debug for project lab2", "lab2", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab2_system > lab2", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "lab2", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("src", "lab2_system > lab2", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("lab2", "lab2_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("xgpio.h", "lab2_system > lab2 > Binaries > lab2.elf -", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("helloworld.c", "lab2/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectTreeTable("xparameters.h", "lab2_system > lab2 > Binaries > lab2.elf -", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("helloworld.c", "lab2/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectTreeTable("xgpiops.h", "lab2_system > lab2 > Binaries > lab2.elf -", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Access commands and other items", "system_platform", "WorkbenchWindow", "ToolItem.ACCESS_COMMANDS");
+setTextField("logical", "system_platform", "Text", "Text");
+selectToolBarButton("Access commands and other items", "system_platform", "WorkbenchWindow", "ToolItem.ACCESS_COMMANDS");
+setTextField("Logic", "system_platform", "Text", "Text");
+activateView("helloworld.c", "lab2/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("Debug Configurations", "lab2", "WorkbenchWindow", "MenuItem.DEBUG_CONFIGURATIONS");
+selectTab("Application", "Debug Configurations", "LaunchConfigurationsDialog", "CTabItem.APPLICATION");
+selectTree("Single Application Debug", EventType.DOUBLE_CLICK, "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("Debug Configurations", "lab2", "WorkbenchWindow", "MenuItem.DEBUG_CONFIGURATIONS");
+selectTree("Debugger_lab2-Default", "Single Application Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTree("Debugger_lab2-Default_1", "Single Application Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTree("Debugger_lab2-Default", "Single Application Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTab("Target Setup", "Debug Configurations", "LaunchConfigurationsDialog", "CTabItem.TARGET_SETUP");
+selectCheckBox("Enable Cross-Triggering", Boolean.TRUE, "Debug Configurations", "LaunchConfigurationsDialog", "Button.ENABLE_CROSS_TRIGGERING");
+selectButton("Cancel", "Cross Trigger Breakpoints", "CrossTriggerBpListDialog", "Button.CANCEL");
+selectCheckBox("Enable Cross-Triggering", Boolean.FALSE, "Debug Configurations", "LaunchConfigurationsDialog", "Button.ENABLE_CROSS_TRIGGERING");
+selectCheckBox("Enable Cross-Triggering", Boolean.TRUE, "Debug Configurations", "LaunchConfigurationsDialog", "Button.ENABLE_CROSS_TRIGGERING");
+selectButton("Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Button.DEBUG");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+activateView("Assistant", "Assistant to manage Vitis project setup builds and", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("Debug Configurations", "lab2", "WorkbenchWindow", "MenuItem.DEBUG_CONFIGURATIONS");
+selectTab("Target Setup", "Debug Configurations", "LaunchConfigurationsDialog", "CTabItem.TARGET_SETUP");
+selectButton("Browse", "Debug Configurations", "LaunchConfigurationsDialog", "Button.BROWSE");
+cancelFileDialog("Hardware Platform", "SDXFileDialog", "Button.CANCEL");
+selectCheckBox("Reset entire system", Boolean.FALSE, "Debug Configurations", "LaunchConfigurationsDialog", "Button.RESET_ENTIRE_SYSTEM");
+selectCheckBox("Program FPGA", Boolean.FALSE, "Debug Configurations", "LaunchConfigurationsDialog", "Button.PROGRAM_FPGA");
+selectButton("Apply", "Debug Configurations", "LaunchConfigurationsDialog", "Button.APPLY");
+selectButton("Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Button.DEBUG");
+activateView("Debugger Console", "DebuggerConsoleView", "CTabItem.DEBUGGER_CONSOLE");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("Breakpoints", "BreakpointsView", "CTabItem.BREAKPOINTS");
+selectToolBarButton("Debug", "lab2", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "lab2", "WorkbenchWindow", "ToolItem.DESIGN");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("Debug Configurations", "lab2", "WorkbenchWindow", "MenuItem.DEBUG_CONFIGURATIONS");
+selectTree("Single Application Debug", "lab2_system", EventType.DOUBLE_CLICK, "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTree("Debugger_lab2-Default", "Single Application Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTree("Debugger_lab2-Default_1", "Single Application Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTree("Debugger_lab2-Default_2", "Single Application Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTree("Debugger_lab2-Default", "Single Application Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectButton("Delete", "Confirm Launch Configuration Deletion", "MessageDialog", "Button.DELETE");
+selectTree("Debugger_lab2-Default_1", "Single Application Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectButton("Delete", "Confirm Launch Configuration Deletion", "MessageDialog", "Button.DELETE");
+selectTree("Debugger_lab2-Default_2", "Single Application Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectButton("Delete", "Confirm Launch Configuration Deletion", "MessageDialog", "Button.DELETE");
+selectTree("Single Application Debug", EventType.DOUBLE_CLICK, "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTab("Target Setup", "Debug Configurations", "LaunchConfigurationsDialog", "CTabItem.TARGET_SETUP");
+selectCheckBox("Enable Cross-Triggering", Boolean.TRUE, "Debug Configurations", "LaunchConfigurationsDialog", "Button.ENABLE_CROSS_TRIGGERING");
+selectCheckBox("Reset entire system", Boolean.FALSE, "Debug Configurations", "LaunchConfigurationsDialog", "Button.RESET_ENTIRE_SYSTEM");
+selectCheckBox("Program FPGA", Boolean.FALSE, "Debug Configurations", "LaunchConfigurationsDialog", "Button.PROGRAM_FPGA");
+selectButton("Browse", "Debug Configurations", "LaunchConfigurationsDialog", "Button.BROWSE");
+cancelFileDialog("Initialization File", "SDXFileDialog", "Button.CANCEL");
+selectButton("Browse", "Debug Configurations", "LaunchConfigurationsDialog", "Button.BROWSE");
+cancelFileDialog("Hardware Platform", "SDXFileDialog", "Button.CANCEL");
+selectButton("Cancel", "Cross Trigger Breakpoints", "CrossTriggerBpListDialog", "Button.CANCEL");
+selectButton("Create", "Cross Trigger Breakpoints", "CrossTriggerBpListDialog", "Button.CREATE");
+selectTree("CPU-0", "Cross Trigger Breakpoint", "CrossTriggerBreakpointDialog", "Tree.CPU_0");
+selectTree("CPU0 DBGACK", "CPU-0", "Cross Trigger Breakpoint", "CrossTriggerBreakpointDialog", "Tree.CPU0_DBGACK");
+selectTree("FTM", "CPU-0", "Cross Trigger Breakpoint", "CrossTriggerBreakpointDialog", "Tree.FTM");
+selectButton("OK", "Cross Trigger Breakpoint", "CrossTriggerBreakpointDialog", "Button.OK");
+selectButton("Create", "Cross Trigger Breakpoints", "CrossTriggerBpListDialog", "Button.CREATE");
+selectTree("CPU-0", "Cross Trigger Breakpoint", "CrossTriggerBreakpointDialog", "Tree.CPU_0");
+selectTree("CPU0 debug request", "CPU-0", "Cross Trigger Breakpoint", "CrossTriggerBreakpointDialog", "Tree.CPU0_DEBUG_REQUEST");
+selectTree("FTM", "CPU-0", "Cross Trigger Breakpoint", "CrossTriggerBreakpointDialog", "Tree.FTM_}");
+selectButton("OK", "Cross Trigger Breakpoint", "CrossTriggerBreakpointDialog", "Button.OK");
+selectButton("OK", "Cross Trigger Breakpoints", "CrossTriggerBpListDialog", "Button.OK");
+selectButton("Apply", "Debug Configurations", "LaunchConfigurationsDialog", "Button.APPLY");
+selectButton("Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Button.DEBUG");
+selectTable("helloworld.c", "Save and Launch", "ScopedResourcesSelectionDialog", "Table.SELECT_RESOURCES_TO_SAVE");
+selectButton("Cancel", "Save and Launch", "ScopedResourcesSelectionDialog", "Button.CANCEL");
+selectToolBarButton("Debug", "lab2", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "lab2", "WorkbenchWindow", "ToolItem.DESIGN");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "WorkbenchWindow", "MenuItem.DEBUG_AS");
+selectMenuItem("Debug Configurations", "lab2", "WorkbenchWindow", "MenuItem.DEBUG_CONFIGURATIONS");
+selectTab("Target Setup", "Debug Configurations", "LaunchConfigurationsDialog", "CTabItem.TARGET_SETUP");
+selectButton("Cancel", "Cross Trigger Breakpoints", "CrossTriggerBpListDialog", "Button.CANCEL");
+selectButton("Close", "Debug Configurations", "LaunchConfigurationsDialog", "Button.CLOSE");
+selectMenuItem("Xilinx", "lab2", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "lab2", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectButton("Program", "Program Device", "SdxProgramFpgaDialog", "Button.PROGRAM");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "lab2", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectTable("helloworld.c", "Save and Launch", "ScopedResourcesSelectionDialog", "Table.SELECT_RESOURCES_TO_SAVE");
+selectButton("Cancel", "Save and Launch", "ScopedResourcesSelectionDialog", "Button.CANCEL");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "WorkbenchWindow", "MenuItem.DEBUG_AS");
+selectMenuItem("Debug Configurations", "lab2", "WorkbenchWindow", "MenuItem.DEBUG_CONFIGURATIONS");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "lab2", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectTable("helloworld.c", "Save and Launch", "ScopedResourcesSelectionDialog", "Table.SELECT_RESOURCES_TO_SAVE");
+selectButton("OK", "Save and Launch", "ScopedResourcesSelectionDialog", "Button.OK");
+selectToolBarButton("Access commands and other items", "lab2", "WorkbenchWindow", "ToolItem.ACCESS_COMMANDS");
+setTextField("ter", "lab2", "Text", "Text");
+selectTable("Views", "lab2", "Table", "Table");
+activateView("Terminal", "TerminalsView", "CTabItem.TERMINAL");
+activateView("Emulation Console", "QEMUConsoleView", "CTabItem.EMULATION_CONSOLE");
+activateView("Terminal", "TerminalsView", "CTabItem.TERMINAL");
+selectToolBarButton("Debug", "lab2", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "lab2", "WorkbenchWindow", "ToolItem.DESIGN");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectToolBarButton("Access commands and other items", "lab2", "WorkbenchWindow", "ToolItem.ACCESS_COMMANDS");
+setTextField("ter", "lab2", "Text", "Text");
+selectTable("Previous Choices", "lab2", "Table", "Table");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectToolBarButton("Open a Terminal", "Terminal", "TerminalsView", "ToolItem.OPEN_A_TERMINAL");
+selectCombo("Serial Terminal", "Launch Terminal", "LaunchTerminalSettingsDialog", "Combo.CHOOSE_TERMINAL");
+selectCombo("Odd", "Launch Terminal", "LaunchTerminalSettingsDialog", "Combo.PARITY");
+selectCombo("Even", "Launch Terminal", "LaunchTerminalSettingsDialog", "Combo.PARITY");
+selectCombo("Odd", "Launch Terminal", "LaunchTerminalSettingsDialog", "Combo.PARITY");
+selectCombo("None", "Launch Terminal", "LaunchTerminalSettingsDialog", "Combo.PARITY");
+selectCombo("115200", "Launch Terminal", "LaunchTerminalSettingsDialog", "Combo.BAUD_RATE");
+selectButton("OK", "Launch Terminal", "LaunchTerminalSettingsDialog", "Button.OK");
+selectToolBarButton("Disconnect Terminal Connection", "Terminal", "TerminalsView", "ToolItem.DISCONNECT_TERMINAL");
+selectToolBarButton("Open a Terminal", "Terminal", "TerminalsView", "ToolItem.OPEN_A_TERMINAL");
+selectButton("OK", "Launch Terminal", "LaunchTerminalSettingsDialog", "Button.OK");
+selectToolBarButton("Access commands and other items", "lab2", "WorkbenchWindow", "ToolItem.ACCESS_COMMANDS");
+setTextField("COM", "lab2", "Text", "Text");
+activateView("Outline", "ContentOutline", "CTabItem.OUTLINE");
+selectToolBarButton("Access commands and other items", "lab2", "WorkbenchWindow", "ToolItem.ACCESS_COMMANDS");
+setTextField("RESUM", "lab2", "Text", "Text");
+selectTable("Menus", "lab2", "Table", "Table");
+selectButton("No", "Confirm Perspective Switch", "MessageDialogWithToggle", "Button.NO");
+activateView("Debug", "LaunchView", "CTabItem.DEBUG");
+selectTreeTable("lab2", "lab2_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Access commands and other items", "lab2", "WorkbenchWindow", "ToolItem.ACCESS_COMMANDS");
+activateView("helloworld.c", "lab2/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectToolBarButton("Access commands and other items", "lab2", "WorkbenchWindow", "ToolItem.ACCESS_COMMANDS");
+selectTable("Previous Choices", "lab2", "Table", "Table");
+selectButton("Switch", "Confirm Perspective Switch", "MessageDialogWithToggle", "Button.SWITCH");
+selectToolBarButton("Resume", "system_platform", "WorkbenchWindow", "ToolItem.RESUME");
+selectToolBarButton("Reset", "system_platform", "WorkbenchWindow", "ToolItem.RESET");
+activateView("helloworld.c", "lab2/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectToolBarButton("Build Debug for project lab2", "lab2", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab2_system > lab2", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab2_system", "lab2_system > lab2", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "lab2", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectToolBarButton("Resume", "lab2", "WorkbenchWindow", "ToolItem.RESUME");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "lab2", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectToolBarButton("Resume", "lab2", "WorkbenchWindow", "ToolItem.RESUME");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "lab2", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectToolBarButton("Resume", "lab2", "WorkbenchWindow", "ToolItem.RESUME");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("xil_hal.h", "system_platform > ps7_cortexa9_0 > standalone_ps7_cortexa9_0 > bsp > ps7_cortexa9_0 > include", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("lab2", "lab2_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Debug As", "Explorer", "ProjectExplorer", "MenuItem.DEBUG_AS");
+selectMenuItem("1 Launch Hardware", "lab2", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectToolBarButton("Resume", "lab2", "WorkbenchWindow", "ToolItem.RESUME");
+selectToolBarButton("Debug", "system_platform", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "system_platform", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("Disconnect", "system_platform", "WorkbenchWindow", "ToolItem.DISCONNECT");
+selectMenuItem("File", "system_platform", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("Exit", "system_platform", "WorkbenchWindow", "MenuItem.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 2/15/23, 6:34:18 PM CET
+// Elapsed time: 01:35:13
+

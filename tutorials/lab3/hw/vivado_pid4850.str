@@ -1783,3 +1783,5 @@ dismissDialog("Export Hardware Platform"); // bA
 // HMemoryUtils.trashcanNow. Engine heap size: 3,223 MB. GUI used memory: 233 MB. Current time: 2/22/23, 5:32:02 PM CET
 // Elapsed time: 2425 seconds
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 3,223 MB. GUI used memory: 227 MB. Current time: 2/22/23, 6:02:02 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,223 MB. GUI used memory: 227 MB. Current time: 2/22/23, 6:32:02 PM CET

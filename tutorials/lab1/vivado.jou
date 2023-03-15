@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Feb  8 16:13:51 2023
+# Process ID: 14259
+# Current directory: /home/ispr/Documentos/ispr/tutorials/lab1
+# Command line: vivado
+# Log file: /home/ispr/Documentos/ispr/tutorials/lab1/vivado.log
+# Journal file: /home/ispr/Documentos/ispr/tutorials/lab1/vivado.jou
+# Running On: pc-b042-18, OS: Linux, CPU Frequency: 2800.000 MHz, CPU Physical cores: 6, Host memory: 16654 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/ispr/Documentos/ispr/tutorials/lab1/hw/project/lab1.xpr
+update_compile_order -fileset sources_1
+write_hw_platform -fixed -include_bit -force -file /home/ispr/Documentos/ispr/tutorials/lab1/hw/system_wrapper.xsa

@@ -1,0 +1,108 @@
+/*
+
+Xilinx Vitis v2021.2.0 (64-bit) [Major: 2021, Minor: 2]
+SW Build 3363750 on 2021-10-16-13:10:08
+
+Process ID (PID): 49662
+License: Customer
+
+Current time: 	Wed Mar 08 18:34:52 CET 2023
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Ubuntu
+OS Version: 5.15.0-48-generic
+OS Architecture: amd64
+Available processors (cores): 6
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 1
+Available disk space: 66 GB
+
+Java version: 	11.0.11 64-bit
+Java home: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9
+Java executable location: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /opt/Xilinx/Vitis/2021.2/tps/lnx64/javafx-sdk-11.0.2/lib:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib/:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib//server:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/python-3.8.3/lib:/opt/Xilinx/Vitis/2021.2/aietools/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /opt/Xilinx/Vitis/2021.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /opt/Xilinx/Vitis
+
+User name: 	ispr
+User home directory: /home/ispr
+User working directory: /home/ispr/Documentos/ispr/tutorials/lab4/sw
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vitis
+HDI_APPROOT: /opt/Xilinx/Vitis/2021.2
+RDI_DATADIR: /opt/Xilinx/Vitis/2021.2/data
+RDI_BINDIR: /opt/Xilinx/Vitis/2021.2/bin
+
+Vitis preferences directory: /home/ispr/.Xilinx/Vitis/2021.2/
+Vitis workspace directory: /home/ispr/Documentos/ispr/tutorials/lab4/sw/worksace
+Vitis workspace log file location: /home/ispr/Documentos/ispr/tutorials/lab4/sw/worksace/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /opt/Xilinx/Vitis/2021.2
+XILINX_SDK: /opt/Xilinx/Vitis/2021.2
+XILINX_VITIS: /opt/Xilinx/Vitis/2021.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2021.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectToolBarButton("Import Sources", "Explorer", "ProjectExplorer", "ToolItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("workspace", "Import Sources (File system)", "FileSystemImportWizard", "Tree.WORKSPACE");
+selectCheckBox("Overwrite existing resources without warning", Boolean.TRUE, "Import Sources (File system)", "FileSystemImportWizard", "Button.OVERWRITE_EXISTING");
+selectCheckBox("Create top-level folder", Boolean.TRUE, "Import Sources (File system)", "FileSystemImportWizard", "Button.CREATE_TOP_LEVEL");
+selectButton("Select All", "Import Sources (File system)", "FileSystemImportWizard", "Button.SELECT_ALL");
+selectButton("Advanced", "Import Sources (File system)", "FileSystemImportWizard", "Button.ADVANCED");
+selectCheckBox("Create links in workspace", Boolean.TRUE, "Import Sources (File system)", "FileSystemImportWizard", "Button.CREATE_LINKS_IN");
+selectCheckBox("Create links in workspace", Boolean.FALSE, "Import Sources (File system)", "FileSystemImportWizard", "Button.CREATE_LINKS_IN");
+selectCheckBox("Create top-level folder", Boolean.FALSE, "Import Sources (File system)", "FileSystemImportWizard", "Button.CREATE_TOP_LEVEL");
+selectCheckBox("Overwrite existing resources without warning", Boolean.FALSE, "Import Sources (File system)", "FileSystemImportWizard", "Button.OVERWRITE_EXISTING");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("RemoteSystemsTempFiles", "Import into Folder", "ContainerSelectionDialog", "Tree.Workspace");
+selectButton("OK", "Import into Folder", "ContainerSelectionDialog", "Button.OK");
+selectButton("Finish", "Import Sources (File system)", "FileSystemImportWizard", "Button.FINISH");
+selectToolBarMenuButton("New", "WorkbenchWindow", "ToolItem.NEW");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectMenuItem("File", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("Open File", "WorkbenchWindow", "MenuItem.OPEN_FILE");
+activateView("helloworld.c", "/home/ispr/Documentos/ispr/tutorials/lab4/sw/worksp", "CEditor", "CTabItem.HELLOWORLD_C");
+activateView("platform.h", "/home/ispr/Documentos/ispr/tutorials/lab4/sw/worksp", "CEditor", "CTabItem.PLATFORM_H");
+activateView("helloworld.c", "/home/ispr/Documentos/ispr/tutorials/lab4/sw/worksp", "CEditor", "CTabItem.HELLOWORLD_C");
+activateView("platform.h", "/home/ispr/Documentos/ispr/tutorials/lab4/sw/worksp", "CEditor", "CTabItem.PLATFORM_H");
+activateView("helloworld.c", "/home/ispr/Documentos/ispr/tutorials/lab4/sw/worksp", "CEditor", "CTabItem.HELLOWORLD_C");
+selectToolBarButton("Design", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("Debug", "WorkbenchWindow", "ToolItem.DEBUG");
+selectToolBarButton("Design", "WorkbenchWindow", "ToolItem.DESIGN");
+selectToolBarButton("View Menu", "Explorer", "ProjectExplorer", "ToolItem.VIEW_MENU");
+selectMenuItem("Window", "WorkbenchWindow", "MenuItem.WINDOW");
+selectMenuItem("Show view", "WorkbenchWindow", "MenuItem.SHOW_VIEW");
+setTextField("projec", "Show View", "ShowViewDialog", "Text");
+selectTree("Project Explorer", "General", EventType.DOUBLE_CLICK, "Show View", "ShowViewDialog", "Tree.ApplicationImpl");
+activateView("Project Explorer", "ProjectExplorer", "CTabItem.PROJECT_EXPLORER");
+selectMenuItem("Close", "Explorer", "ProjectExplorer", "MenuItem.CLOSE");
+activateView("Project Explorer", "ProjectExplorer", "CTabItem.PROJECT_EXPLORER");
+selectMenuItem("Window", "WorkbenchWindow", "MenuItem.WINDOW");
+selectMenuItem("Show view", "WorkbenchWindow", "MenuItem.SHOW_VIEW");
+selectTree("Project Explorer", "General", EventType.DOUBLE_CLICK, "Show View", "ShowViewDialog", "Tree.ApplicationImpl");
+activateView("Project Explorer", "ProjectExplorer", "CTabItem.PROJECT_EXPLORER");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 3/8/23, 6:42:19 PM CET
+// Elapsed time: 00:07:26
+

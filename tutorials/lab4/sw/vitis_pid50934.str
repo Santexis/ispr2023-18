@@ -1,0 +1,147 @@
+/*
+
+Xilinx Vitis v2021.2.0 (64-bit) [Major: 2021, Minor: 2]
+SW Build 3363750 on 2021-10-16-13:10:08
+
+Process ID (PID): 50934
+License: Customer
+
+Current time: 	Wed Mar 08 18:42:54 CET 2023
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Ubuntu
+OS Version: 5.15.0-48-generic
+OS Architecture: amd64
+Available processors (cores): 6
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 1
+Available disk space: 66 GB
+
+Java version: 	11.0.11 64-bit
+Java home: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9
+Java executable location: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /opt/Xilinx/Vitis/2021.2/tps/lnx64/javafx-sdk-11.0.2/lib:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib/:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib//server:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/python-3.8.3/lib:/opt/Xilinx/Vitis/2021.2/aietools/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /opt/Xilinx/Vitis/2021.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /opt/Xilinx/Vitis
+
+User name: 	ispr
+User home directory: /home/ispr
+User working directory: /home/ispr/Documentos/ispr/tutorials/lab4/sw
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vitis
+HDI_APPROOT: /opt/Xilinx/Vitis/2021.2
+RDI_DATADIR: /opt/Xilinx/Vitis/2021.2/data
+RDI_BINDIR: /opt/Xilinx/Vitis/2021.2/bin
+
+Vitis preferences directory: /home/ispr/.Xilinx/Vitis/2021.2/
+Vitis workspace directory: /home/ispr/Documentos/ispr/tutorials/lab4/sw/workspace
+Vitis workspace log file location: /home/ispr/Documentos/ispr/tutorials/lab4/sw/workspace/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /opt/Xilinx/Vitis/2021.2
+XILINX_SDK: /opt/Xilinx/Vitis/2021.2
+XILINX_VITIS: /opt/Xilinx/Vitis/2021.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2021.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+closeView("Welcome", "ViewIntroAdapterPart", "CTabItem.WELCOME");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("system_platform", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("lab4_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("helloworld.c", "lab4_system > lab4 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("helloworld.c", "lab4_system > lab4 > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("*helloworld.c", "lab4/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("xscutimer.h", "system_platform/ps7_cortexa9_0/standalone_ps7_corte", "CEditor", "CTabItem.XSCUTIMER_H");
+activateView("*helloworld.c", "lab4/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+selectTreeTable("Debug", "lab4_system > lab4", "helloworld.c", "CEditor", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab4_system > lab4", "helloworld.c", "CEditor", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project lab4", "lab4", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab4_system > lab4", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("xscutimer.h", "system_platform/ps7_cortexa9_0/standalone_ps7_corte", "CEditor", "CTabItem.XSCUTIMER_H");
+activateView("helloworld.c", "lab4/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectToolBarButton("Build Debug for project lab4", "lab4", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab4_system > lab4", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("xscutimer.h", "system_platform/ps7_cortexa9_0/standalone_ps7_corte", "CEditor", "CTabItem.XSCUTIMER_H");
+activateView("helloworld.c", "lab4/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("make ***", "Errors", "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+selectProblemsView("ScuTimerCfg undeclared", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("make ***", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+selectProblemsView("make", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+selectProblemsView("platform file not found /home/ispr/Documentos/ispr/", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+selectProblemsView("ScuTimerCfg undeclared", "Errors", "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+selectToolBarButton("Build Debug for project lab4", "lab4", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab4_system > lab4", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+activateView("Problems", "5 errors 1 warning 0 others", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("Warnings", "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+selectProblemsView("incompatible types when initializing type float usi", "Errors", "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+selectToolBarButton("Build Debug for project lab4", "lab4", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab4_system > lab4", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("xscutimer_sinit.c", "system_platform/ps7_cortexa9_0/standalone_ps7_corte", "CEditor", "CTabItem.XSCUTIMER_SINIT_C");
+activateView("xscutimer.h", "system_platform/ps7_cortexa9_0/standalone_ps7_corte", "CEditor", "CTabItem.XSCUTIMER_H");
+activateView("xscutimer_sinit.c", "system_platform/ps7_cortexa9_0/standalone_ps7_corte", "CEditor", "CTabItem.XSCUTIMER_SINIT_C");
+activateView("xscutimer.h", "system_platform/ps7_cortexa9_0/standalone_ps7_corte", "CEditor", "CTabItem.XSCUTIMER_H");
+activateView("helloworld.c", "lab4/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectButton("OK", "Open Declaration", "Button", "OK");
+activateView("helloworld.c", "lab4/src/helloworld.c", "CEditor", "CTabItem.HELLOWORLD_C");
+selectToolBarButton("Build Debug for project lab4", "lab4", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("Problems", "2 errors 0 warnings 0 others", "ProblemsView", "CTabItem.PROBLEMS");
+selectTreeTable("Debug", "lab4_system > lab4", "Problems", "ProblemsView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectProblemsView("make ***", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+selectProblemsView("ScuTimerCfg undeclared", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("ScuTimerCfg undeclared", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("ScuTimerCfg undeclared", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("ScuTimerCfg undeclared", "Errors", "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+selectToolBarButton("Build Debug for project lab4", "lab4", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab4_system > lab4", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("xgpiops.h", "system_platform > export > system_platform > sw > system_platform > standalone_ps7_cortexa9_0 > bspinclude > include", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("*helloworld.c", "lab4/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("xgpiops.h", "system_platform/export/system_platform/sw/system_pl", "CEditor", "CTabItem.XGPIOPS_H");
+activateView("*helloworld.c", "lab4/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("xgpiops.h", "system_platform/export/system_platform/sw/system_pl", "CEditor", "CTabItem.XGPIOPS_H");
+activateView("*helloworld.c", "lab4/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("xgpiops.h", "system_platform/export/system_platform/sw/system_pl", "CEditor", "CTabItem.XGPIOPS_H");
+activateView("*helloworld.c", "lab4/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("xgpiops.h", "system_platform/export/system_platform/sw/system_pl", "CEditor", "CTabItem.XGPIOPS_H");
+activateView("*helloworld.c", "lab4/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("xgpiops.h", "system_platform/export/system_platform/sw/system_pl", "CEditor", "CTabItem.XGPIOPS_H");
+activateView("*helloworld.c", "lab4/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+activateView("xgpiops_sinit.c", "system_platform/ps7_cortexa9_0/standalone_ps7_corte", "CEditor", "CTabItem.XGPIOPS_SINIT_C");
+activateView("*helloworld.c", "lab4/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 3/8/23, 7:10:12 PM CET
+// Elapsed time: 00:27:18
+

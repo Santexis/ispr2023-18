@@ -1,0 +1,149 @@
+/*
+
+Xilinx Vitis v2021.2.0 (64-bit) [Major: 2021, Minor: 2]
+SW Build 3363750 on 2021-10-16-13:10:08
+
+Process ID (PID): 4391
+License: Customer
+
+Current time: 	Wed Mar 01 15:39:36 CET 2023
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Ubuntu
+OS Version: 5.15.0-48-generic
+OS Architecture: amd64
+Available processors (cores): 6
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 1
+Available disk space: 66 GB
+
+Java version: 	11.0.11 64-bit
+Java home: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9
+Java executable location: 	/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /opt/Xilinx/Vitis/2021.2/tps/lnx64/javafx-sdk-11.0.2/lib:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib/:/opt/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib//server:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2021.2/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/tps/lnx64/python-3.8.3/lib:/opt/Xilinx/Vitis/2021.2/aietools/lib/lnx64.o:/opt/Xilinx/Vitis/2021.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /opt/Xilinx/Vitis/2021.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /opt/Xilinx/Vitis
+
+User name: 	ispr
+User home directory: /home/ispr
+User working directory: /home/ispr/Documentos/ispr/tutorials/lab3/sw
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vitis
+HDI_APPROOT: /opt/Xilinx/Vitis/2021.2
+RDI_DATADIR: /opt/Xilinx/Vitis/2021.2/data
+RDI_BINDIR: /opt/Xilinx/Vitis/2021.2/bin
+
+Vitis preferences directory: /home/ispr/.Xilinx/Vitis/2021.2/
+Vitis workspace directory: /home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace
+Vitis workspace log file location: /home/ispr/Documentos/ispr/tutorials/lab3/sw/workspace/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /opt/Xilinx/Vitis/2021.2
+XILINX_SDK: /opt/Xilinx/Vitis/2021.2
+XILINX_VITIS: /opt/Xilinx/Vitis/2021.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2021.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectTreeTable("Debug", "lab3_system > lab3", "firD_OWN.c", "CEditor", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab3_system > lab3", "firD_OWN.c", "CEditor", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("fir.c", "lab3/src/fir.c", "CEditor", "CTabItem.FIR_C");
+selectTreeTable("fir.h", "lab3_system > lab3 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("fir.c", "lab3/src/fir.c", "CEditor", "CTabItem.FIR_C");
+closeView("firD_OWN.c", "lab3/src/firD_OWN.c", "CEditor", "CTabItem.FIRD_OWN_C");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("fir_coef.dat", "lab3_system > lab3 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("lab3.c", "lab3_system > lab3 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Run", "lab3", "WorkbenchWindow", "ToolItem.RUN");
+selectToolBarMenuButton("Run", "lab3", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run As", "lab3.c", "WorkbenchWindow", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch Hardware", "lab3", "WorkbenchWindow", "MenuItem.1_LAUNCH_HARDWARE");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+activateView("system_platform", "system_platform/platform.spr", "ScwEditor", "CTabItem.SYSTEM_PLATFORM");
+closeView("system_platform", "system_platform/platform.spr", "ScwEditor", "CTabItem.SYSTEM_PLATFORM");
+activateView("fir_coef.dat", "lab3/src/fir_coef.dat", "TextEditor", "CTabItem.FIR_COEF_DAT");
+closeView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("fir.h", "lab3/src/fir.h", "CEditor", "CTabItem.FIR_H");
+activateView("fir.c", "lab3/src/fir.c", "CEditor", "CTabItem.FIR_C");
+selectToolBarButton("Build Debug for project lab3", "lab3", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab3_system > lab3", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("Debug", "lab3_system > lab3", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project lab3", "lab3", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "lab3_system > lab3", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectToolBarButton("Restore", "lab3", "ToolItem", "RESTORE");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+activateView("lab3.c", "lab3/src/lab3.c", "CEditor", "CTabItem.LAB3_C");
+closeView("fir.c", "lab3/src/fir.c", "CEditor", "CTabItem.FIR_C");
+activateView("fir_coef.dat", "lab3/src/fir_coef.dat", "TextEditor", "CTabItem.FIR_COEF_DAT");
+activateView("fir.h", "lab3/src/fir.h", "CEditor", "CTabItem.FIR_H");
+activateView("lab3.c", "lab3/src/lab3.c", "CEditor", "CTabItem.LAB3_C");
+selectTreeTable("fir.c", "lab3_system > lab3 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("fir_coef.dat", "lab3/src/fir_coef.dat", "TextEditor", "CTabItem.FIR_COEF_DAT");
+activateView("fir.h", "lab3/src/fir.h", "CEditor", "CTabItem.FIR_H");
+activateView("fir_coef.dat", "lab3/src/fir_coef.dat", "TextEditor", "CTabItem.FIR_COEF_DAT");
+activateView("fir.c", "lab3/src/fir.c", "CEditor", "CTabItem.FIR_C");
+selectTreeTable("src", "lab3_system > lab3", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("New", "Explorer", "ProjectExplorer", "MenuItem.NEW");
+selectMenuItem("File", "lab3", "WorkbenchWindow", "MenuItem.FILE");
+selectButton("Finish", "Create New File (File)", "BasicNewFileResourceWizard", "Button.FINISH");
+selectTextEditor("IRR.c", "lab3/src/IRR.c", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.IRR_C");
+selectMenuItem("Paste", "IRR.c", "WorkbenchWindow", "MenuItem.PASTE");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("firD_OWN.c", "lab3_system > lab3 > src", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Delete", "Explorer", "ProjectExplorer", "MenuItem.DELETE");
+selectButton("OK", "Delete Resources", "RefactoringWizardDialog2", "Button.OK");
+activateView("fir_coef.dat", "lab3/src/fir_coef.dat", "TextEditor", "CTabItem.FIR_COEF_DAT");
+closeView("fir_coef.dat", "lab3/src/fir_coef.dat", "TextEditor", "CTabItem.FIR_COEF_DAT");
+activateView("fir.c", "lab3/src/fir.c", "CEditor", "CTabItem.FIR_C");
+activateView("*IRR.c", "lab3/src/IRR.c", "Editor", "CTabItem.*IRR_C");
+activateView("fir.c", "lab3/src/fir.c", "CEditor", "CTabItem.FIR_C");
+selectTextEditor("IRR.c", "lab3/src/IRR.c", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.IRR_C");
+selectMenuItem("©", "IRR.c", "WorkbenchWindow", "MenuItem.©");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("fir_coef.dat", "lab3_system > lab3 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("IRR.c", "lab3_system > lab3 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("src", "lab3_system > lab3", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Paste", "Explorer", "ProjectExplorer", "MenuItem.PASTE");
+selectToolBarButton("Build Debug for project lab3", "lab3", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project lab3", "lab3", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTree("iir_direct_form_I_float", "Outline", "ContentOutline", "Tree.IRR_c");
+selectToolBarButton("Save", "lab3", "WorkbenchWindow", "ToolItem.SAVE");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("iir_coeff.dat", "lab3_system > lab3 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("fir_coef.dat", "lab3/src/fir_coef.dat", "TextEditor", "CTabItem.FIR_COEF_DAT");
+closeView("fir_coef.dat", "lab3/src/fir_coef.dat", "TextEditor", "CTabItem.FIR_COEF_DAT");
+activateView("IRR.c", "lab3/src/IRR.c", "CEditor", "CTabItem.IRR_C");
+selectToolBarButton("Build Debug for project lab3", "lab3", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 3/1/23, 6:36:51 PM CET
+// Elapsed time: 02:57:15
+

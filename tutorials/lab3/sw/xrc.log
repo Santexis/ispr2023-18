@@ -1,8 +1,14 @@
-Wed Feb 22 17:06:16 2023: Server was asked to start on port: '40455'
-Wed Feb 22 17:06:16 2023: Server is using token UUID: '2115fe0a-3233-4d97-8090-03cdc2ded66c'
-Wed Feb 22 17:06:16 2023: Attempting to start server on port '40455'
-Wed Feb 22 17:06:16 2023: XRC main fifo: created main fifo '/tmp/xrcmain2115fe0a-3233-4d97-8090-03cdc2ded66c', fd read = 11
-Wed Feb 22 17:06:16 2023: Running Rule Check Server
-Wed Feb 22 17:06:16 2023: Version 1.6.1
-Wed Feb 22 17:06:16 2023: Rule Check Server: Accepted socket connection from client
-Wed Feb 22 17:06:16 2023: EXCHANGE_TOKEN received, server token: 2115fe0a-3233-4d97-8090-03cdc2ded66c, passed token: 2115fe0a-3233-4d97-8090-03cdc2ded66c
+Wed Mar  1 15:39:36 2023: Server was asked to start on port: '43317'
+Wed Mar  1 15:39:36 2023: Server is using token UUID: '849584ff-5716-47c8-9411-a87ec959ec12'
+Wed Mar  1 15:39:36 2023: Attempting to start server on port '43317'
+Wed Mar  1 15:39:36 2023: XRC main fifo: created main fifo '/tmp/xrcmain849584ff-5716-47c8-9411-a87ec959ec12', fd read = 11
+Wed Mar  1 15:39:36 2023: Running Rule Check Server
+Wed Mar  1 15:39:36 2023: Version 1.6.1
+Wed Mar  1 15:39:36 2023: Rule Check Server: Accepted socket connection from client
+Wed Mar  1 15:39:36 2023: EXCHANGE_TOKEN received, server token: 849584ff-5716-47c8-9411-a87ec959ec12, passed token: 849584ff-5716-47c8-9411-a87ec959ec12
+Wed Mar  1 18:36:51 2023: STOP_SERVER received, server token: 849584ff-5716-47c8-9411-a87ec959ec12, passed token: 849584ff-5716-47c8-9411-a87ec959ec12
+Wed Mar  1 18:36:51 2023: Socket received request to stop server.
+Wed Mar  1 18:36:51 2023: SERVER: destructor for server bound to port 43317
+Wed Mar  1 18:36:51 2023: XRC main fifo: Good unlink of /tmp/xrcmain849584ff-5716-47c8-9411-a87ec959ec12
+Wed Mar  1 18:36:51 2023: Server exiting with status 0.
+Wed Mar  1 18:36:51 2023: Closing log file.

@@ -23,3 +23,5 @@ platform clean
 platform generate
 platform clean
 platform generate
+platform active {system_platform}
+platform generate -domains 
