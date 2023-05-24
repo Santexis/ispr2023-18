@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1684340188463">
+  <ports id="1" name="stream_V_data_V" type="PortType" originalName="stream.V.data.V" bitwidth="256">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="stream_V_keep_V" type="PortType" originalName="stream.V.keep.V" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="stream_V_strb_V" type="PortType" originalName="stream.V.strb.V" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="stream_V_user_V" type="PortType" originalName="stream.V.user.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="stream_V_last_V" type="PortType" originalName="stream.V.last.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="stream_V_id_V" type="PortType" originalName="stream.V.id.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="stream_V_dest_V" type="PortType" originalName="stream.V.dest.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="out_V" type="PortType" originalName="out.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="119" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="120" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="121" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="122" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="123" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="124" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="125" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="128" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="129" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="130" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="131" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="132" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="133" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="134" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="138" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="139" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="142" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="145" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="146" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="147" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="158" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="175" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="176" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="177" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="178" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="181" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.7"/>
+  <edges id="182" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.7"/>
+  <edges id="185" source_obj="//@blocks.3/@node_objs.5" sink_obj="//@blocks.3/@node_objs.8"/>
+  <edges id="188" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@blocks.3/@node_objs.9"/>
+  <edges id="193" source_obj="//@blocks.3/@node_objs.9" sink_obj="//@blocks.3/@node_objs.11"/>
+  <edges id="194" source_obj="//@blocks.3/@node_objs.10" sink_obj="//@blocks.3/@node_objs.11"/>
+  <edges id="199" source_obj="//@blocks.3/@node_objs.12" sink_obj="//@ports.7"/>
+  <edges id="200" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.13"/>
+  <edges id="201" source_obj="//@blocks.7/@node_objs.13" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="202" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="205" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="212" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="213" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="221" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="234" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.7/@node_objs.5"/>
+  <edges id="235" source_obj="//@blocks.7/@node_objs.2" sink_obj="//@blocks.7/@node_objs.5"/>
+  <edges id="236" source_obj="//@blocks.7/@node_objs.4" sink_obj="//@blocks.7/@node_objs.5"/>
+  <edges id="237" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.7/@node_objs.6"/>
+  <edges id="240" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.7/@node_objs.7"/>
+  <edges id="241" source_obj="//@blocks.7/@node_objs.3" sink_obj="//@blocks.7/@node_objs.7"/>
+  <edges id="244" source_obj="//@blocks.7/@node_objs.5" sink_obj="//@blocks.7/@node_objs.8"/>
+  <edges id="247" source_obj="//@blocks.7/@node_objs.6" sink_obj="//@blocks.7/@node_objs.9"/>
+  <edges id="251" source_obj="//@blocks.7/@node_objs.9" sink_obj="//@blocks.7/@node_objs.11"/>
+  <edges id="252" source_obj="//@blocks.7/@node_objs.10" sink_obj="//@blocks.7/@node_objs.11"/>
+  <edges id="256" source_obj="//@blocks.7/@node_objs.12" sink_obj="//@ports.7"/>
+  <edges id="259" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.7/@node_objs.13"/>
+  <edges id="260" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7/@node_objs.14"/>
+  <edges id="261" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="262" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="263" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="267" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="268" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="269" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="270" source_obj="//@blocks.11/@node_objs.2" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="271" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="274" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="275" source_obj="//@blocks.11/@node_objs.0" sink_obj="//@blocks.11/@node_objs.1"/>
+  <edges id="278" source_obj="//@blocks.11/@node_objs.0" sink_obj="//@blocks.11/@node_objs.2"/>
+  <edges id="281" source_obj="//@blocks.11/@node_objs.1" sink_obj="//@blocks.11/@node_objs.3"/>
+  <edges id="282" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.11/@node_objs.3"/>
+  <edges id="283" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.11/@node_objs.3"/>
+  <edges id="286" source_obj="//@blocks.12/@node_objs.0" sink_obj="//@ports.7"/>
+  <edges id="289" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.12/@node_objs.1"/>
+  <edges id="290" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.13/@node_objs.0"/>
+  <edges id="291" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="292" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="294" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="295" source_obj="//@blocks.14/@node_objs.0" sink_obj="//@blocks.14/@node_objs.1"/>
+  <edges id="296" sink_obj="//@blocks.14/@node_objs.1"/>
+  <edges id="407" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.5"/>
+  <edges id="408" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="409" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="410" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="411" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="412" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2"/>
+  <edges id="413" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.9"/>
+  <edges id="414" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="415" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.8"/>
+  <edges id="416" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <edges id="417" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6"/>
+  <edges id="418" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9"/>
+  <edges id="419" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.10"/>
+  <edges id="420" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.14"/>
+  <edges id="421" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.11"/>
+  <edges id="422" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.13"/>
+  <edges id="423" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.12"/>
+  <edges id="424" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.11"/>
+  <edges id="425" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.14"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.7/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.7/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.7"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.7" sink_obj="//@blocks.3/@node_objs.9"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.8" sink_obj="//@blocks.3/@node_objs.10"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.11" sink_obj="//@blocks.3/@node_objs.12"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.7/@node_objs.4"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.7/@node_objs.7"/>
+  <edges id="-1" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.4"/>
+  <edges id="-1" source_obj="//@blocks.7/@node_objs.7" sink_obj="//@blocks.7/@node_objs.9"/>
+  <edges id="-1" source_obj="//@blocks.7/@node_objs.8" sink_obj="//@blocks.7/@node_objs.10"/>
+  <edges id="-1" source_obj="//@blocks.7/@node_objs.11" sink_obj="//@blocks.7/@node_objs.12"/>
+  <blocks id="27" name="block_27" type="BlockType">
+    <controlOutputObjs>.preheader.preheader</controlOutputObjs>
+    <controlOutputObjs>.preheader65.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="empty" lineNumber="41" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" bitwidth="324" opcode="read" nodeLatency="1" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="41" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>stream_V_data_V</dataInputObjs>
+      <dataInputObjs>stream_V_keep_V</dataInputObjs>
+      <dataInputObjs>stream_V_strb_V</dataInputObjs>
+      <dataInputObjs>stream_V_user_V</dataInputObjs>
+      <dataInputObjs>stream_V_last_V</dataInputObjs>
+      <dataInputObjs>stream_V_id_V</dataInputObjs>
+      <dataInputObjs>stream_V_dest_V</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="odd_column_load" lineNumber="44" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" bitwidth="1" opcode="load" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="44" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataOutputObjs>br</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="node_26" lineNumber="44" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="br" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="44" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>load</dataInputObjs>
+      <controlInputObjs>.preheader65.preheader</controlInputObjs>
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ejercicio_ledMatrix/ws2812.cpp">
+      <validLinenumbers>41</validLinenumbers>
+      <validLinenumbers>44</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="29" name=".preheader65.preheader" type="BlockType">
+    <controlInputObjs>block_27</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader65</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="node_28" lineNumber="45" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="br" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="45" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <controlInputObjs>.preheader65</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ejercicio_ledMatrix/ws2812.cpp">
+      <validLinenumbers>45</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="35" name=".preheader65" type="BlockType">
+    <controlInputObjs>.preheader65.preheader</controlInputObjs>
+    <controlInputObjs>block_59</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.loopexit64.loopexit5</controlOutputObjs>
+    <controlOutputObjs>block_59</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="i" originalName="i" bitwidth="4" opcode="phi" nodeLabel="2" m_display="0">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <controlInputObjs>block_59</controlInputObjs>
+      <controlInputObjs>.preheader65.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="exitcond1" lineNumber="45" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="exitcond1_fu_187_p2" contextFuncName="ws2812" bitwidth="1" opcode="icmp" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="45" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="i_4" lineNumber="45" originalName="i" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="i_4_fu_193_p2" contextFuncName="ws2812" bitwidth="4" opcode="add" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="45" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="node_34" lineNumber="45" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="br" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="45" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_59</controlInputObjs>
+      <controlInputObjs>.loopexit64.loopexit5</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ejercicio_ledMatrix/ws2812.cpp">
+      <validLinenumbers>45</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="59" name="block_59" type="BlockType">
+    <controlInputObjs>.preheader65</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader65</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="Hi_assign" lineNumber="47" originalName="Hi" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="Hi_assign_fu_211_p2" contextFuncName="ws2812" bitwidth="8" opcode="or" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="tmp_20" lineNumber="47" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_20_fu_217_p2" contextFuncName="ws2812" bitwidth="1" opcode="icmp" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="tmp_24" lineNumber="47" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_24_fu_240_p2" contextFuncName="ws2812" bitwidth="9" opcode="sub" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="tmp_25" lineNumber="47" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_25_fu_246_p2" contextFuncName="ws2812" bitwidth="9" opcode="xor" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="tmp_26" lineNumber="47" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_26_fu_252_p2" contextFuncName="ws2812" bitwidth="9" opcode="sub" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="tmp_27" lineNumber="47" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_27_fu_258_p3" contextFuncName="ws2812" bitwidth="9" opcode="select" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="tmp_28" lineNumber="47" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_28_fu_266_p3" contextFuncName="ws2812" bitwidth="256" opcode="select" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>lshr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="tmp_29" lineNumber="47" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_29_fu_273_p3" contextFuncName="ws2812" bitwidth="9" opcode="select" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>lshr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="tmp_30" lineNumber="47" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_30_fu_281_p2" contextFuncName="ws2812" bitwidth="9" opcode="sub" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>lshr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="tmp_33" lineNumber="47" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_33_fu_291_p2" contextFuncName="ws2812" bitwidth="256" opcode="lshr" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="tmp_34" lineNumber="47" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_34_fu_417_p2" contextFuncName="ws2812" bitwidth="256" opcode="lshr" nodeLabel="3" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="p_Result_s" lineNumber="47" originalName="__Result__" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="p_Result_s_fu_423_p2" contextFuncName="ws2812" bitwidth="256" opcode="and" nodeLabel="3" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>lshr</dataInputObjs>
+      <dataInputObjs>lshr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="node_57" lineNumber="47" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="grp_ws2812_led_fu_168" contextFuncName="ws2812" opcode="call" nodeLabel="3" nodeLatency="1" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="47" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>out_V</dataOutputObjs>
+      <constName>ws2812_led</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="node_58" lineNumber="45" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="br" nodeLabel="4" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="45" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <controlInputObjs>.preheader65</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ejercicio_ledMatrix/ws2812.cpp">
+      <validLinenumbers>47</validLinenumbers>
+      <validLinenumbers>45</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="61" name=".loopexit64.loopexit5" type="BlockType">
+    <controlInputObjs>.preheader65</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.loopexit64</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="node_60" opcode="br" nodeLabel="2" m_display="0">
+      <controlInputObjs>.loopexit64</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="63" name=".preheader.preheader" type="BlockType">
+    <controlInputObjs>block_27</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="node_62" lineNumber="51" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="br" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="51" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ejercicio_ledMatrix/ws2812.cpp">
+      <validLinenumbers>51</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="68" name=".preheader" type="BlockType">
+    <controlInputObjs>.preheader.preheader</controlInputObjs>
+    <controlInputObjs>block_93</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.loopexit64.loopexit</controlOutputObjs>
+    <controlOutputObjs>block_93</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="i1" originalName="i" bitwidth="4" opcode="phi" nodeLabel="2" m_display="0">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <controlInputObjs>block_93</controlInputObjs>
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="node_67" lineNumber="51" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="br" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="51" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <controlInputObjs>block_93</controlInputObjs>
+      <controlInputObjs>.loopexit64.loopexit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ejercicio_ledMatrix/ws2812.cpp">
+      <validLinenumbers>51</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="93" name="block_93" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="Hi_assign_2" lineNumber="53" originalName="Hi" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="Hi_assign_2_fu_317_p2" contextFuncName="ws2812" bitwidth="8" opcode="or" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="tmp_2" lineNumber="53" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_2_fu_323_p2" contextFuncName="ws2812" bitwidth="1" opcode="icmp" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="tmp_6" lineNumber="53" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_6_fu_346_p2" contextFuncName="ws2812" bitwidth="9" opcode="sub" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="tmp_7" lineNumber="53" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_7_fu_352_p2" contextFuncName="ws2812" bitwidth="9" opcode="xor" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="tmp_8" lineNumber="53" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_8_fu_358_p2" contextFuncName="ws2812" bitwidth="9" opcode="sub" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="tmp_9" lineNumber="53" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_9_fu_364_p3" contextFuncName="ws2812" bitwidth="9" opcode="select" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="tmp_10" lineNumber="53" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_10_fu_372_p3" contextFuncName="ws2812" bitwidth="256" opcode="select" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>lshr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="tmp_11" lineNumber="53" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_11_fu_379_p3" contextFuncName="ws2812" bitwidth="9" opcode="select" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>lshr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="tmp_12" lineNumber="53" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_12_fu_387_p2" contextFuncName="ws2812" bitwidth="9" opcode="sub" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>lshr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="tmp_15" lineNumber="53" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_15_fu_397_p2" contextFuncName="ws2812" bitwidth="256" opcode="lshr" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="tmp_16" lineNumber="53" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_16_fu_436_p2" contextFuncName="ws2812" bitwidth="256" opcode="lshr" nodeLabel="3" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="p_Result_1" lineNumber="53" originalName="__Result__" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="p_Result_1_fu_442_p2" contextFuncName="ws2812" bitwidth="256" opcode="and" nodeLabel="3" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>lshr</dataInputObjs>
+      <dataInputObjs>lshr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="node_90" lineNumber="53" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="grp_ws2812_led_fu_168" contextFuncName="ws2812" opcode="call" nodeLabel="3" nodeLatency="1" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="53" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>out_V</dataOutputObjs>
+      <constName>ws2812_led</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="i_3" lineNumber="51" originalName="i" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="i_3_fu_403_p2" contextFuncName="ws2812" bitwidth="4" opcode="add" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="51" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="node_92" lineNumber="51" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="br" nodeLabel="4" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="51" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ejercicio_ledMatrix/ws2812.cpp">
+      <validLinenumbers>53</validLinenumbers>
+      <validLinenumbers>51</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="95" name=".loopexit64.loopexit" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.loopexit64</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="node_94" opcode="br" nodeLabel="2" m_display="0">
+      <controlInputObjs>.loopexit64</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="98" name=".loopexit64" type="BlockType">
+    <controlInputObjs>.loopexit64.loopexit5</controlInputObjs>
+    <controlInputObjs>.loopexit64.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader8.preheader</controlOutputObjs>
+    <controlOutputObjs>mergeST</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="tmp_s" lineNumber="56" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="tmp_s_fu_409_p2" contextFuncName="ws2812" bitwidth="1" opcode="xor" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="56" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="node_97" lineNumber="58" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="br" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="58" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>read</dataInputObjs>
+      <controlInputObjs>mergeST</controlInputObjs>
+      <controlInputObjs>.preheader8.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ejercicio_ledMatrix/ws2812.cpp">
+      <validLinenumbers>56</validLinenumbers>
+      <validLinenumbers>58</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="100" name=".preheader8.preheader" type="BlockType">
+    <controlInputObjs>.loopexit64</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader8</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="node_99" lineNumber="61" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="br" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="61" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <controlInputObjs>.preheader8</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ejercicio_ledMatrix/ws2812.cpp">
+      <validLinenumbers>61</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="106" name=".preheader8" type="BlockType">
+    <controlInputObjs>.preheader8.preheader</controlInputObjs>
+    <controlInputObjs>block_110</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>mergeST.loopexit</controlOutputObjs>
+    <controlOutputObjs>block_110</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="i2" originalName="i" bitwidth="13" opcode="phi" nodeLabel="3" m_display="0">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>block_110</controlInputObjs>
+      <controlInputObjs>.preheader8.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="exitcond" lineNumber="61" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="exitcond_fu_452_p2" contextFuncName="ws2812" bitwidth="1" opcode="icmp" nodeLabel="3" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="61" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="i_5" lineNumber="61" originalName="i" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." rtlName="i_5_fu_458_p2" contextFuncName="ws2812" bitwidth="13" opcode="add" nodeLabel="3" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="61" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="node_105" lineNumber="61" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="br" nodeLabel="3" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="61" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_110</controlInputObjs>
+      <controlInputObjs>mergeST.loopexit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ejercicio_ledMatrix/ws2812.cpp">
+      <validLinenumbers>61</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="110" name="block_110" type="BlockType">
+    <controlInputObjs>.preheader8</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader8</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="node_108" lineNumber="62" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="write" nodeLabel="3" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="62" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataOutputObjs>out_V</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="node_109" lineNumber="61" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="br" nodeLabel="3" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="61" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <controlInputObjs>.preheader8</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="ejercicio_ledMatrix/ws2812.cpp">
+      <validLinenumbers>62</validLinenumbers>
+      <validLinenumbers>61</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="112" name="mergeST.loopexit" type="BlockType">
+    <controlInputObjs>.preheader8</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>mergeST</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="node_111" opcode="br" nodeLabel="3" m_display="0">
+      <controlInputObjs>mergeST</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="116" name="mergeST" type="BlockType">
+    <controlInputObjs>.loopexit64</controlInputObjs>
+    <controlInputObjs>mergeST.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="odd_column_new" lineNumber="56" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" bitwidth="1" opcode="phi" nodeLabel="4" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="56" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <controlInputObjs>.loopexit64</controlInputObjs>
+      <controlInputObjs>mergeST.loopexit</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="node_114" lineNumber="56" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="store" nodeLabel="4" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="56" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+      <dataInputObjs>phi</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="node_115" lineNumber="66" fileName="ejercicio_ledMatrix/ws2812.cpp" fileDirectory=".." contextFuncName="ws2812" opcode="ret" nodeLabel="4" m_display="0">
+      <inlineStackInfo fileName="ejercicio_ledMatrix/ws2812.cpp" linenumber="66" fileDirectory="C:\Xilinx" functionName="ws2812"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="ejercicio_ledMatrix/ws2812.cpp">
+      <validLinenumbers>56</validLinenumbers>
+      <validLinenumbers>66</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <regnodes realName="tmp_s_reg_523">
+    <nodeIds>96</nodeIds>
+  </regnodes>
+  <regnodes realName="i_4_reg_490">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="i_5_reg_541">
+    <nodeIds>104</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_124">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_36_reg_528">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="odd_column_load_reg_482">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="i1_reg_135">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_12_reg_508">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <regnodes realName="i2_reg_146">
+    <nodeIds>101</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_data_V_reg_470">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_last_V_reg_478">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_30_reg_495">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_18_reg_533">
+    <nodeIds>89</nodeIds>
+  </regnodes>
+  <regnodes realName="i_3_reg_518">
+    <nodeIds>91</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_15_reg_513">
+    <nodeIds>86</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_33_reg_500">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="odd_column_new_reg_157">
+    <nodeIds>113</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_fu_297">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_29_fu_273">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="Lo_assign_fu_203">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_fu_364">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_23_fu_231">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="Hi_assign_fu_211">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_3_fu_403">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_32_fu_414">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond1_fu_187">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_33_fu_291">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_329">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_11_fu_379">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_1_fu_442">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_34_fu_417">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i1_phi_fu_139">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_36_fu_428">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_352">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_31_fu_287">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_24_fu_240">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_12_fu_387">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_21_fu_223">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_4_fu_193">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_fu_452">
+    <nodeIds>102</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_337">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_128">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_333">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_V_fu_175">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="Lo_assign_2_fu_309">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_15_fu_397">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_last_V_fu_179">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_13_fu_393">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_346">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_19_fu_199">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_14_fu_433">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_26_fu_252">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_16_fu_436">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_27_fu_258">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_323">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_20_fu_217">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_305">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_409">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="Hi_assign_2_fu_317">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_fu_372">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_18_fu_447">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_25_fu_246">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="odd_column_new_phi_fu_161">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_30_fu_281">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i2_phi_fu_150">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_s_fu_423">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_358">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_5_fu_458">
+    <nodeIds>104</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_22_fu_227">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_28_fu_266">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_ws2812_led_fu_168">
+    <nodeIds>57</nodeIds>
+    <nodeIds>90</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="grp_read_fu_98">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="odd_column_load_load_fu_183">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_99_write_fu_116">
+    <nodeIds>108</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_103_store_fu_464">
+    <nodeIds>114</nodeIds>
+  </ioNodes>
+  <ioPorts name="out_V">
+    <contents name="call">
+      <nodeIds>57</nodeIds>
+      <nodeIds>90</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>108</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_V_data_V">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_V_dest_V">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_V_id_V">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_V_keep_V">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_V_last_V">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_V_strb_V">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="stream_V_user_V">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="22" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="2"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="2"/>
+      <operations id="58" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="2"/>
+      <operations id="92" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="31"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="33"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="34"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="36"/>
+    </transitions>
+    <transitions inState="5" outState="3">
+      <condition id="38"/>
+    </transitions>
+    <transitions inState="3" outState="6">
+      <condition id="41"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="43"/>
+    </transitions>
+    <transitions inState="7" outState="3">
+      <condition id="45"/>
+    </transitions>
+    <transitions inState="3" outState="9">
+      <condition id="47"/>
+    </transitions>
+    <transitions inState="3" outState="8">
+      <condition id="49"/>
+    </transitions>
+    <transitions inState="8" outState="8">
+      <condition id="51"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="53"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="ws2812" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="29420" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <subRegions>9</subRegions>
+      <subRegions>10</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="-1">
+      <basicBlocks>27</basicBlocks>
+      <basicBlocks>29</basicBlocks>
+      <basicBlocks>63</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="loop_column_0" mII="-1" mDepth="-1" mMinTripCount="8" mMaxTripCount="8" mMinLatency="24416" mMaxLatency="-1" mType="1">
+      <basicBlocks>35</basicBlocks>
+      <basicBlocks>59</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>61</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="loop_column_1" mII="-1" mDepth="-1" mMinTripCount="8" mMaxTripCount="8" mMinLatency="24416" mMaxLatency="-1" mType="1">
+      <basicBlocks>68</basicBlocks>
+      <basicBlocks>93</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>95</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Region 3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>98</basicBlocks>
+      <basicBlocks>100</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="loop_reset" mII="-1" mDepth="-1" mMinTripCount="5000" mMaxTripCount="5000" mMinLatency="5000" mMaxLatency="-1" mType="1">
+      <basicBlocks>106</basicBlocks>
+      <basicBlocks>110</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="9" mTag="Region 4" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>112</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="10" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>116</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

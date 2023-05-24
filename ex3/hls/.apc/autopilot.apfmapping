@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="ws2812.h" path="C:\Xilinx\ejercicio_ledMatrix\ws2812.h"/>
+    <originFiles name="ws2812.cpp" path="C:\Xilinx\ejercicio_ledMatrix\ws2812.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_ws2812.cpp" path="C:\Xilinx\ejercicio_ledMatrix\test_ws2812.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

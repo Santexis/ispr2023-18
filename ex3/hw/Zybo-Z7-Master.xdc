@@ -1,0 +1,1 @@
+set_property -dict { PACKAGE_PIN T20   IOSTANDARD LVCMOS33 } [get_ports {out_V[0] }]; #IO_L15P_T2_DQS_34 Sch=JB1_p

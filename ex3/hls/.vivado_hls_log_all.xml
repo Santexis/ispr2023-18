@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'odd_column' is power-on initialization." projectName="ejercicio_ledMatrix" solutionName="solution1" date="2023-05-17T18:16:28.168+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="ejercicio_ledMatrix" solutionName="solution1" date="2023-05-17T18:16:28.135+0200" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] ejercicio_ledMatrix/ws2812.cpp:28: variable-indexed range selection may cause suboptimal QoR." projectName="ejercicio_ledMatrix" solutionName="solution1" date="2023-05-17T18:16:27.369+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
